@@ -5,8 +5,9 @@ using UnityEngine;
 public class Aqueduct : MonoBehaviour {
 
     int count = 0;
-	// Use this for initialization
-	void Start () {
+    
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,15 +16,47 @@ public class Aqueduct : MonoBehaviour {
 		
 	}
 
+    void Left(GameObject gameObject) {
+        Debug.Log("Left");
+
+    }
+
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Ground")
+        if (coll.gameObject.tag == "Water")
         {
-            if (count == 0) {
-                //coll.gameObject.GetComponent<Collider2D>().enabled = false;
+           
+
+            if (gameObject.name == "Left(Clone)") {
+                
+                //Rigidbody2D m_Rigidbody = gameObject.GetComponent<Rigidbody2D>(); 
+                Left(coll.gameObject);
+               // Physics.IgnoreLayerCollision(8, 9);
             }
 
-            count++;
+
+            if (gameObject.name == "Right(Clone)")
+            {
+                Debug.Log("Right");
+            }
+
+
+            if (gameObject.name == "Horizontal(Clone)")
+            {
+                Debug.Log("Horizontal");
+            }
+
+
+            if (gameObject.name == "Vertical(Clone)")
+            {
+                Debug.Log("Vertical");
+                Rigidbody2D m_Rigidbody = gameObject.GetComponent<Rigidbody2D>();
+                
+                //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+
+            }
+
+
         }
     }
 }

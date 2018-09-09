@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class AqueductManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class AqueductManager : MonoBehaviour
     int ductR = 0;
     int ductD = 3;
     int ductH = 0;
+
+    int Count=0;
 
     Vector3 mousePosition, targetPosition;
 
@@ -21,10 +24,21 @@ public class AqueductManager : MonoBehaviour
     public Transform horizontalPrefab;
     public Transform targetObject;
 
+    public List<GameObject> floorList= new List<GameObject>(); 
+
     // Use this for initialization
     void Start()
     {
-       
+        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
+        {
+            floorList.Add(fooObj);
+        }
+
+        floorList = floorList.OrderBy(t => t.name).ToList();
+
+        foreach (GameObject floor in floorList) {
+           // Debug.Log(floor.name);
+        }
     }
 
     // Update is called once per frame
@@ -66,7 +80,7 @@ public class AqueductManager : MonoBehaviour
                 ductL--;
                 Debug.Log(ductL);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-
+                Count++;
             }
 
             else if (targetObject == rightPrefab && ductR > 0)
@@ -74,7 +88,7 @@ public class AqueductManager : MonoBehaviour
                 ductR--;
                 Debug.Log(ductR);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-
+                Count++;
             }
 
             else if (targetObject == horizontalPrefab && ductH > 0)
@@ -82,7 +96,7 @@ public class AqueductManager : MonoBehaviour
                 ductH--;
                 Debug.Log(ductH);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-
+                Count++;
             }
 
             else if (targetObject == downPrefab && ductD > 0)
@@ -90,9 +104,10 @@ public class AqueductManager : MonoBehaviour
                 ductD--;
                 Debug.Log(ductD);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-
+                Count++;
             }
 
+            //floorList[Count].GetComponent;
         }
     }
 }
