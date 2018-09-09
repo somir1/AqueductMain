@@ -24,8 +24,10 @@ public class AqueductManager : MonoBehaviour
     public Transform horizontalPrefab;
     public Transform targetObject;
 
-    public List<GameObject> floorList= new List<GameObject>(); 
+    public GameObject Bottom;
 
+    public List<GameObject> floorList= new List<GameObject>(); 
+    
     // Use this for initialization
     void Start()
     {
@@ -42,8 +44,8 @@ public class AqueductManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() { 
+    
         if (Input.GetKeyDown("1"))
         {
             Debug.Log("Duct Left: " + ductL);
