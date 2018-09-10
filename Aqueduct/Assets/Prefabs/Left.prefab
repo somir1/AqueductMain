@@ -42,6 +42,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -3.6305723, y: -2.6919367, z: 0}
 =======
   m_LocalPosition: {x: -10.391439, y: 6.6791415, z: 0}
@@ -61,6 +62,9 @@ Transform:
 =======
   m_LocalPosition: {x: -10.391439, y: 6.6791415, z: 0}
 >>>>>>> parent of bfce78a... Distance Sript Added
+=======
+  m_LocalPosition: {x: -10.391439, y: 6.6791415, z: 0}
+>>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_LocalScale: {x: 3.5616481, y: 1.4960243, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
