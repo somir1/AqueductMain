@@ -19,6 +19,7 @@ public class LiquidGenarate : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			temp.transform.localPosition = new Vector3 (x, y, 0);
 =======
 			temp.transform.localPosition = new Vector3 (x+3, y+3, 0);
@@ -35,6 +36,9 @@ public class LiquidGenarate : MonoBehaviour {
 =======
 			temp.transform.localPosition = new Vector3 (x+3, y+3, 0);
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
+=======
+			temp.transform.localPosition = new Vector3 (x+3, y+3, 0);
+>>>>>>> parent of bfce78a... Distance Sript Added
 			temp.transform.parent = transform;
 		}
 	}

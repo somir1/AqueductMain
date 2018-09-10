@@ -37,7 +37,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1635272337285558}
   m_LocalRotation: {x: -0, y: -0, z: 0.8565701, w: 0.5160307}
+<<<<<<< HEAD
   m_LocalPosition: {x: 24.209717, y: 9.70514, z: 0}
+=======
+  m_LocalPosition: {x: -8.937972, y: 6.9961185, z: 0}
+>>>>>>> parent of bfce78a... Distance Sript Added
   m_LocalScale: {x: 3.5616481, y: 1.4960243, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828ef977985698c4dad82a41829af110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BombUIlist: []
 --- !u!212 &212812577589385104
 SpriteRenderer:
   m_ObjectHideFlags: 1
