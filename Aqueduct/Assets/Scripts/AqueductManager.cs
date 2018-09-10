@@ -12,7 +12,7 @@ public class AqueductManager : MonoBehaviour
     int ductD = 3;
     int ductH = 0;
 
-    int Count=0;
+    int Count=-1;
 
     Vector3 mousePosition, targetPosition;
 
@@ -37,7 +37,7 @@ public class AqueductManager : MonoBehaviour
         floorList = floorList.OrderBy(t => t.name).ToList();
 
         foreach (GameObject floor in floorList) {
-           // Debug.Log(floor.name);
+           //Debug.Log(floor.name);
         }
     }
 
@@ -78,7 +78,7 @@ public class AqueductManager : MonoBehaviour
         {
             if (targetObject == leftPrefab && ductL > 0) {
                 ductL--;
-                Debug.Log(ductL);
+               // Debug.Log(ductL);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                 Count++;
             }
@@ -86,7 +86,7 @@ public class AqueductManager : MonoBehaviour
             else if (targetObject == rightPrefab && ductR > 0)
             {
                 ductR--;
-                Debug.Log(ductR);
+               // Debug.Log(ductR);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                 Count++;
             }
@@ -94,7 +94,7 @@ public class AqueductManager : MonoBehaviour
             else if (targetObject == horizontalPrefab && ductH > 0)
             {
                 ductH--;
-                Debug.Log(ductH);
+                //Debug.Log(ductH);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                 Count++;
             }
@@ -102,12 +102,23 @@ public class AqueductManager : MonoBehaviour
             else if (targetObject == downPrefab && ductD > 0)
             {
                 ductD--;
-                Debug.Log(ductD);
+                //Debug.Log(ductD);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                 Count++;
             }
 
-            //floorList[Count].GetComponent;
+            // Debug.Log(floorList[Count].name);
+            // Debug.Log(Count);
+            if (Count == 2 || Count == 6) {
+                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+                floorList[Count+1].GetComponent<PolygonCollider2D>().isTrigger = true;
+                Count++;
+            }
+            else
+            {
+                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+            }
+            
         }
     }
 }
