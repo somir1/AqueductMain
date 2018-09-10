@@ -27,6 +27,7 @@ public class AqueductManager : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     public List<GameObject> floorList= new List<GameObject>(); 
 
@@ -47,6 +48,10 @@ public class AqueductManager : MonoBehaviour
     public List<GameObject> floorList= new List<GameObject>(); 
 
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
+=======
+    public List<GameObject> floorList= new List<GameObject>(); 
+
+>>>>>>> parent of bfce78a... Distance Sript Added
 =======
     public List<GameObject> floorList= new List<GameObject>(); 
 

@@ -42,6 +42,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.5844341, y: 0.7084043, z: 0}
 =======
   m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
@@ -58,6 +59,9 @@ Transform:
 =======
   m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
+=======
+  m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
+>>>>>>> parent of bfce78a... Distance Sript Added
 =======
   m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
 >>>>>>> parent of bfce78a... Distance Sript Added
@@ -160,6 +164,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
@@ -169,6 +174,8 @@ MonoBehaviour:
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
+=======
+>>>>>>> parent of bfce78a... Distance Sript Added
 =======
 >>>>>>> parent of bfce78a... Distance Sript Added
 --- !u!212 &212246800002168568
