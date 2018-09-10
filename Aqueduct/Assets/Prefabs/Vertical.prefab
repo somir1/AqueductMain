@@ -38,7 +38,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.5844341, y: 0.7084043, z: 0}
+=======
+  m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
+>>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
   m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
@@ -140,6 +144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BombUIlist: []
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
+=======
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
