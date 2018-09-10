@@ -36,7 +36,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356647028365988}
   m_LocalRotation: {x: -0, y: -0, z: 0.91990227, w: -0.3921477}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.6552743, y: -2.8336172, z: 0}
+=======
+  m_LocalPosition: {x: -10.391439, y: 6.6791415, z: 0}
+>>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_LocalScale: {x: 3.5616481, y: 1.4960243, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828ef977985698c4dad82a41829af110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BombUIlist: []
 --- !u!212 &212945353693973266
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -14,7 +14,7 @@ public class LiquidGenarate : MonoBehaviour {
 			GameObject temp = (GameObject)Instantiate (_prefab);
 			float x = Random.Range (-1.0f, 1.0f) * _width / 2;
 			float y = Random.Range (-1.0f, 1.0f) * _height / 2;
-			temp.transform.localPosition = new Vector3 (x+3, y+3    , 0);
+			temp.transform.localPosition = new Vector3 (x+3, y+3, 0);
 			temp.transform.parent = transform;
 		}
 	}
