@@ -1532,7 +1532,6 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
@@ -1544,8 +1543,6 @@ Transform:
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of bfce78a... Distance Sript Added
-=======
->>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1692,7 +1689,6 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
@@ -1706,8 +1702,6 @@ Transform:
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of bfce78a... Distance Sript Added
-=======
->>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1001 &1072512714
@@ -2570,7 +2564,6 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &1833657122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,8 +2649,6 @@ Camera:
 >>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 =======
 >>>>>>> parent of bfce78a... Distance Sript Added
-=======
->>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
 --- !u!1 &1836499550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,7 +2702,6 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_RootOrder: 27
 =======
   m_RootOrder: 12
@@ -2731,9 +2721,6 @@ Transform:
 =======
   m_RootOrder: 12
 >>>>>>> parent of bfce78a... Distance Sript Added
-=======
-  m_RootOrder: 12
->>>>>>> parent of ccb7ec3... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866500714
 GameObject:
