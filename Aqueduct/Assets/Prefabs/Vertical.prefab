@@ -97,7 +97,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_LocalPosition: {x: 6.8449893, y: 21.092812, z: 0}
 =======
   m_LocalPosition: {x: 0.041920494, y: -0.49321336, z: 0}
@@ -105,9 +104,6 @@ Transform:
 =======
   m_LocalPosition: {x: -9.119656, y: 6.7697067, z: 0}
 >>>>>>> parent of d70af2e... Aqueducts work in the most basic way possible
-=======
-  m_LocalPosition: {x: 6.8449893, y: 21.092812, z: 0}
->>>>>>> parent of 3ecb729... Merge branch 'master' of https://github.com/somir1/AqueductMain
   m_LocalScale: {x: 2.9104505, y: 1.0979717, z: 1}
   m_Children:
   - {fileID: 4828030286612224}
