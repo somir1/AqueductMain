@@ -1725,7 +1725,7 @@ MonoBehaviour:
   leftPrefab: {fileID: 4555841816774634, guid: 0271847a23f7bb24990d19fa60af693c, type: 2}
   rightPrefab: {fileID: 4260045958544708, guid: efd6f9155325c354fb7d7c1c3b9f8260,
     type: 2}
-  downPrefab: {fileID: 4539318355657006, guid: 2c1b48d7c9075bf49b6dd73cfe97d298, type: 2}
+  downPrefab: {fileID: 4694430409821624, guid: 4aa266ca5301e6740bea5b837654e7f3, type: 2}
   horizontalPrefab: {fileID: 4044620688656632, guid: 32fe11ab01eb30e4b82a0eaa75a0ce06,
     type: 2}
   floorList: []
