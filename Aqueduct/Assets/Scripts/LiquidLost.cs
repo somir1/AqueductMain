@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LiquidLost : MonoBehaviour {
+public class LiquidLost :  LiquidGenarate {
     //variable to track water drops
-    int LostLiquid = 0;
+    float LostLiquid = 0f;
 
     private void Update()
     {
         YouLose();
     }
+
+    private void Start()
+    {
+        
+    }
     //calculates the amount of water that passes through the off screen trigger. 
+
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Water")
@@ -24,11 +31,13 @@ public class LiquidLost : MonoBehaviour {
     void YouLose()
     {
         //need to reference the numliquid variable from the LiquidGenerate Script and replace 5 in the if statement with (that value * .5)
-        if (LostLiquid >= 5)
+        if (LostLiquid >= ((_numLiquid) * .5f)-.5)
         {
             Debug.Log("You lose");
             //TODO switch with script to load losing screen. 
         }
     }
+
+
 
 }
