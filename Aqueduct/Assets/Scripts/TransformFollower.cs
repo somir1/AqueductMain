@@ -60,6 +60,7 @@ public class TransformFollower : MonoBehaviour
             target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
         }
 
+       
 
 
     }
@@ -98,12 +99,12 @@ public class TransformFollower : MonoBehaviour
         if (offsetPositionSpace == Space.Self)
         {
             // transform.position = target.TransformPoint(offsetPosition);
-            transform.position = Vector3.Lerp(transform.position, target.TransformPoint(offsetPosition), 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0,transform.position.y,transform.position.z), target.TransformPoint(offsetPosition), 2f * Time.deltaTime);
         }
         else
         {
             //transform.position = target.position + offsetPosition;
-            transform.position = Vector3.Lerp(transform.position, target.position + offsetPosition, 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3 (0, transform.position.y, transform.position.z), target.position + offsetPosition, 2f * Time.deltaTime);
         }
 
         // compute rotation
