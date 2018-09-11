@@ -7,12 +7,12 @@ using System.Linq;
 public class AqueductManager : MonoBehaviour
 {
 
-    int ductL = 1;
-    int ductR = 0;
+    int ductL = 3;
+    int ductR = 3;
     int ductD = 3;
-    int ductH = 0;
+    int ductH = 3;
 
-    int Count=0;
+    int Count=-1;
 
     Vector3 mousePosition, targetPosition;
 
@@ -22,7 +22,7 @@ public class AqueductManager : MonoBehaviour
     public Transform rightPrefab;
     public Transform downPrefab;
     public Transform horizontalPrefab;
-    public Transform targetObject;
+    private Transform targetObject;
 
     public List<GameObject> floorList= new List<GameObject>(); 
 
@@ -107,12 +107,19 @@ public class AqueductManager : MonoBehaviour
                 Count++;
             }
 
-            //floorList[Count].GetComponent;
+            if (Count == 2 || Count == 6)
+            {
+                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+                floorList[Count + 1].GetComponent<PolygonCollider2D>().isTrigger = true;
+                Count++;
+            }
+            else
+            {
+                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+            }
         }
     }
 }
 
 
    
-
-     
