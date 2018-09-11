@@ -22,7 +22,7 @@ public class AqueductManager : MonoBehaviour
     public Transform rightPrefab;
     public Transform downPrefab;
     public Transform horizontalPrefab;
-    public Transform targetObject;
+    private Transform targetObject;
 
     public List<GameObject> floorList= new List<GameObject>(); 
 
