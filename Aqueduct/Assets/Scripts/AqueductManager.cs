@@ -13,6 +13,7 @@ public class AqueductManager : MonoBehaviour
     int ductH = 3;
 
     int Count=-1;
+    bool picked = false;
 
     Vector3 mousePosition, targetPosition;
 
@@ -48,31 +49,36 @@ public class AqueductManager : MonoBehaviour
         {
             Debug.Log("Duct Left: " + ductL);
             targetObject = leftPrefab;
+            picked = true;
         }
 
         if (Input.GetKeyDown("2"))
         {
             Debug.Log("Duct Right: " + ductR);
             targetObject = rightPrefab;
+            picked = true;
         }
 
         if (Input.GetKeyDown("3"))
         {
             Debug.Log("Duct Down: " + ductD);
             targetObject = downPrefab;
+            picked = true;
         }
 
         if (Input.GetKeyDown("4"))
         {
             Debug.Log("Duct Horizontal: " + ductH);
             targetObject = horizontalPrefab;
+            picked = true;
         }
 
         mousePosition = Input.mousePosition;
 
         targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, distance));
 
-        targetObject.position = targetPosition;
+        if (picked == true)
+            targetObject.position = targetPosition;
 
         if (Input.GetMouseButtonUp(0))
         {
