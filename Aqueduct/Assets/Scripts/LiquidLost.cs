@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LiquidLost :  LiquidGenarate {
     //variable to track water drops
@@ -34,6 +35,7 @@ public class LiquidLost :  LiquidGenarate {
         if (LostLiquid >= ((_numLiquid) * .5f)-.5)
         {
             Debug.Log("You lose");
+            SceneManager.LoadScene("Lose");
             //TODO switch with script to load losing screen. 
         }
     }
