@@ -24,6 +24,8 @@ public class LiquidLost :  LiquidGenarate {
         if (col.gameObject.tag == "Water")
         {
             LostLiquid++;
+            //Creates errors in TransformFollower script.
+            //Destroy(col.gameObject); 
             Debug.Log(" You lost " + LostLiquid + " water");
         }
     }
@@ -36,6 +38,7 @@ public class LiquidLost :  LiquidGenarate {
         {
             Debug.Log("You lose");
             SceneManager.LoadScene("Lose");
+            
            
         }
     }
