@@ -36,7 +36,7 @@ public class LiquidLost :  LiquidGenarate {
         {
             Debug.Log("You lose");
             SceneManager.LoadScene("Lose");
-            //TODO switch with script to load losing screen. 
+           
         }
     }
 
