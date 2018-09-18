@@ -1691,7 +1691,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   leftPrefab: {fileID: 4555841816774634, guid: 0271847a23f7bb24990d19fa60af693c, type: 2}
-  rightPrefab: {fileID: 4260045958544708, guid: efd6f9155325c354fb7d7c1c3b9f8260,
+  rightPrefab: {fileID: 4555841816774634, guid: 3c459e79a29ef934398dda85dc2ac9e6,
     type: 2}
   downPrefab: {fileID: 4694430409821624, guid: 4aa266ca5301e6740bea5b837654e7f3, type: 2}
   horizontalPrefab: {fileID: 4962038326091592, guid: 75cda985a378fe8449f22bcf10c8cd36,
