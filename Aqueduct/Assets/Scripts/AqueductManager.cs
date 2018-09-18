@@ -12,7 +12,7 @@ public class AqueductManager : MonoBehaviour
     int ductD = 3;
     int ductH = 3;
 
-    int Count=-1;
+    int Count = -1;
     bool picked = false;
 
     Vector3 mousePosition, targetPosition;
@@ -25,7 +25,7 @@ public class AqueductManager : MonoBehaviour
     public Transform horizontalPrefab;
     private Transform targetObject;
 
-    public List<GameObject> floorList= new List<GameObject>(); 
+    public List<GameObject> floorList = new List<GameObject>();
 
     // Use this for initialization
     void Start()
@@ -37,8 +37,9 @@ public class AqueductManager : MonoBehaviour
 
         floorList = floorList.OrderBy(t => t.name).ToList();
 
-        foreach (GameObject floor in floorList) {
-           // Debug.Log(floor.name);
+        foreach (GameObject floor in floorList)
+        {
+            // Debug.Log(floor.name);
         }
     }
 
@@ -82,7 +83,8 @@ public class AqueductManager : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (targetObject == leftPrefab && ductL > 0) {
+            if (targetObject == leftPrefab && ductL > 0)
+            {
                 ductL--;
                 Debug.Log(ductL);
                 Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
@@ -113,19 +115,19 @@ public class AqueductManager : MonoBehaviour
                 Count++;
             }
 
-            if (Count == 2 || Count == 6)
-            {
-                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-                floorList[Count + 1].GetComponent<PolygonCollider2D>().isTrigger = true;
-                Count++;
-            }
-            else
-            {
-                floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-            }
+            /*if (Count == 2 || Count == 6)
+             {
+                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+                 floorList[Count + 1].GetComponent<PolygonCollider2D>().isTrigger = true;
+                 Count++;
+             }
+             else
+             {
+                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
+             }*/
         }
     }
 }
 
 
-   
+

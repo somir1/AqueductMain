@@ -18,7 +18,7 @@ public class TransformFollower : MonoBehaviour
     [SerializeField]
     private bool lookAt = true;
 
-    public List<GameObject> waterList= new List<GameObject>();
+    public List<GameObject> waterList = new List<GameObject>();
 
     float waitTime = .5f;
     bool wait = false;
@@ -29,19 +29,23 @@ public class TransformFollower : MonoBehaviour
     float minDistanceToFinish;
     int minDistanceToFinishIndex;
 
+    int waterListNullCount;
+
 
     private void Start()
     {
         Wait();
-        
+
 
     }
     private void Update()
     {
-        if (waitTime > 0 && wait == true) {
+        if (waitTime > 0 && wait == true)
+        {
             waitTime -= Time.deltaTime;
         }
-        if (waitTime < 0 ) {
+        if (waitTime < 0)
+        {
             wait = false;
             makeList();
             waitTime = 1f;
@@ -51,16 +55,28 @@ public class TransformFollower : MonoBehaviour
         {
             for (int i = 0; i < 10; i++)
             {
-                dist[i] = Vector2.Distance(Bottom.transform.position, waterList[i].transform.position);
+                if (waterList[i] != null)
+                {
+                    dist[i] = Vector2.Distance(Bottom.transform.position, waterList[i].transform.position);
+                }
+                else
+                {
+                    waterListNullCount++;
+                }
+                if (waterListNullCount >= 8)
+                    Wait();
             }
 
             minDistanceToFinish = dist.Min();
             minDistanceToFinishIndex = dist.ToList().IndexOf(minDistanceToFinish);
 
-            target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
+            if (waterList[minDistanceToFinishIndex] != null)
+            {
+                target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
+            }
         }
 
-       
+
 
 
     }
@@ -71,10 +87,11 @@ public class TransformFollower : MonoBehaviour
 
     }
 
-    void makeList() {
+    void makeList()
+    {
         foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Water"))
         {
-           
+
             waterList.Add(fooObj);
         }
         sortList();
@@ -83,7 +100,7 @@ public class TransformFollower : MonoBehaviour
 
     void sortList()
     {
-        
+
     }
 
     private void FixedUpdate()
@@ -99,12 +116,12 @@ public class TransformFollower : MonoBehaviour
         if (offsetPositionSpace == Space.Self)
         {
             // transform.position = target.TransformPoint(offsetPosition);
-            transform.position = Vector3.Lerp(new Vector3(0,transform.position.y,transform.position.z), target.TransformPoint(offsetPosition), 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 2f * Time.deltaTime);
         }
         else
         {
             //transform.position = target.position + offsetPosition;
-            transform.position = Vector3.Lerp(new Vector3 (0, transform.position.y, transform.position.z), target.position + offsetPosition, 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 2f * Time.deltaTime);
         }
 
         // compute rotation
