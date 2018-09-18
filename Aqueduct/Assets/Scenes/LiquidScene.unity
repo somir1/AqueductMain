@@ -1026,13 +1026,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 674125430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f278347b5041b347b7382aa0e324cdf, type: 3}
+  m_Script: {fileID: 11500000, guid: b48453dc8beec4f45b62e7d2ed73d9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numLiquid: 10
-  _width: 1
-  _height: 1
-  _prefab: {fileID: 0}
+  rightLiquidLost: {fileID: 1157567373}
+  liquidGenarate: {fileID: 1506938071}
+  StartWater: 0
+  LeftTriggerWaterLoss: 0
+  RightTriggerWaterLoss: 0
+  TotalLiquidLost: 0
 --- !u!1 &747208586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,13 +1728,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1157567370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f278347b5041b347b7382aa0e324cdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cc76b4154c07c0488139582df1842cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numLiquid: 10
-  _width: 1
-  _height: 1
-  _prefab: {fileID: 0}
+  rightLiquidLost: {fileID: 674125433}
+  liquidGenarate: {fileID: 1506938071}
+  StartWater: 0
+  LeftTriggerWaterLoss: 0
+  RightTriggerWaterLoss: 0
+  TotalLiquidLost: 0
 --- !u!1 &1188778808
 GameObject:
   m_ObjectHideFlags: 0
