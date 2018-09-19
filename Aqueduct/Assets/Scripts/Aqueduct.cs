@@ -7,16 +7,13 @@ public class Aqueduct : MonoBehaviour
 
     int count = 0;
 
-    public Rigidbody rb;
-
-
-
+   
     public Transform waterSpawn;
 
     // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -39,19 +36,18 @@ public class Aqueduct : MonoBehaviour
         {
 
             count++;
+            // Destroy(coll.gameObject);
 
-
-            if (gameObject.name == "L(Clone)")
+            if (gameObject.name == "L")
             {
 
                 coll.transform.position = waterSpawn.position;
-                coll.rigidbody.velocity = new Vector3(-1, 0, 0);
             }
 
-                if (gameObject.name == "R(Clone)")
+
+            if (gameObject.name == "R(Clone)")
             {
                 coll.transform.position = waterSpawn.position;
-                coll.rigidbody.velocity = new Vector3(0, 0, 0);
             }
 
 
@@ -64,7 +60,6 @@ public class Aqueduct : MonoBehaviour
             if (gameObject.name == "Ver(Clone)")
             {
                 coll.transform.position = waterSpawn.position;
-                coll.rigidbody.velocity = new Vector3(1, 0, 0);
             }
 
 
