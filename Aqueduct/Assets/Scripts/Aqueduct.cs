@@ -7,7 +7,7 @@ public class Aqueduct : MonoBehaviour
 
     int count = 0;
 
-    public Rigidbody rb;
+   
 
 
 
@@ -41,30 +41,30 @@ public class Aqueduct : MonoBehaviour
             count++;
 
 
-            if (gameObject.name == "L(Clone)")
+            if (gameObject.name == "Left(Clone)")
             {
 
                 coll.transform.position = waterSpawn.position;
                 coll.rigidbody.velocity = new Vector3(-1, 0, 0);
             }
 
-                if (gameObject.name == "R(Clone)")
-            {
-                coll.transform.position = waterSpawn.position;
-                coll.rigidbody.velocity = new Vector3(0, 0, 0);
-            }
-
-
-            if (gameObject.name == "Hori(Clone)")
-            {
-
-            }
-
-
-            if (gameObject.name == "Ver(Clone)")
+                if (gameObject.name == "Right(Clone)")
             {
                 coll.transform.position = waterSpawn.position;
                 coll.rigidbody.velocity = new Vector3(1, 0, 0);
+            }
+
+
+            if (gameObject.name == "Horizontal(Clone)")
+            {
+
+            }
+
+
+            if (gameObject.name == "Vertical(Clone)")
+            {
+                coll.transform.position = waterSpawn.position;
+                coll.rigidbody.velocity = new Vector3(0, 0, 0);
             }
 
 
