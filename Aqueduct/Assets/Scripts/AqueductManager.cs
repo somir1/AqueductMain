@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+
 public class AqueductManager : MonoBehaviour
 {
-
     int ductL = 3;
     int ductR = 3;
     int ductD = 3;
@@ -126,6 +126,26 @@ public class AqueductManager : MonoBehaviour
                  floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
              }*/
         }
+    }
+
+    public void OnHorizontal() {
+        targetObject = horizontalPrefab;
+        picked = true;
+    }
+    public void OnVertical()
+    {
+        targetObject = downPrefab;
+        picked = true;
+    }
+    public void OnLeft()
+    {
+        targetObject = leftPrefab;
+        picked = true;
+    }
+    public void OnRight()
+    {
+        targetObject = rightPrefab;
+        picked = true;
     }
 }
 

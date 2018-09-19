@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4257485917871982}
   - component: {fileID: 212513226669903456}
   - component: {fileID: 60800509866778468}
+  - component: {fileID: 114316895800192366}
   m_Layer: 0
   m_Name: R
   m_TagString: Untagged
@@ -50,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1430120890835820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81593907, y: 2.923224, z: 0}
+  m_LocalPosition: {x: 0.58276975, y: -15.9998255, z: 0}
   m_LocalScale: {x: 0.5852114, y: 0.5852114, z: 0.5852114}
   m_Children:
   - {fileID: 4713066072880364}
@@ -101,6 +102,18 @@ PolygonCollider2D:
       - {x: 1.7457179, y: -2.1155772}
       - {x: 2.110232, y: -2.12675}
       - {x: 2.6364179, y: -2.1265218}
+--- !u!114 &114316895800192366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430120890835820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828ef977985698c4dad82a41829af110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSpawn: {fileID: 4713066072880364}
 --- !u!212 &212513226669903456
 SpriteRenderer:
   m_ObjectHideFlags: 1
