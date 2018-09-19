@@ -38,6 +38,8 @@ public class RightWaterLoss : MonoBehaviour
         if (col.gameObject.tag == "Water")
         {
             RightTriggerWaterLoss++;
+            //Removing comment from Destroy(col.gameObject) creates an error in TransformFollower.cs 
+            //Destroy(col.gameObject);
         }
     }
 
