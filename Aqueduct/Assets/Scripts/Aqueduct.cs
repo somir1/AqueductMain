@@ -2,58 +2,64 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Aqueduct : MonoBehaviour {
+public class Aqueduct : MonoBehaviour
+{
 
     int count = 0;
-    
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    void Left(GameObject gameObject) {
+   
+    public Transform waterSpawn;
+
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    void Left(GameObject gameObject)
+    {
         Debug.Log("Left");
 
     }
+
+  
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Water")
         {
-           
 
-            if (gameObject.name == "Left(Clone)") {
-                
-                //Rigidbody2D m_Rigidbody = gameObject.GetComponent<Rigidbody2D>(); 
-                Left(coll.gameObject);
-               // Physics.IgnoreLayerCollision(8, 9);
+            count++;
+            // Destroy(coll.gameObject);
+
+            if (gameObject.name == "L")
+            {
+
+                coll.transform.position = waterSpawn.position;
             }
 
 
-            if (gameObject.name == "Right(Clone)")
+            if (gameObject.name == "R(Clone)")
             {
-                Debug.Log("Right");
+                coll.transform.position = waterSpawn.position;
             }
 
 
-            if (gameObject.name == "Horizontal(Clone)")
+            if (gameObject.name == "Hori(Clone)")
             {
-                Debug.Log("Horizontal");
+
             }
 
 
-            if (gameObject.name == "Vertical(Clone)")
+            if (gameObject.name == "Ver(Clone)")
             {
-                Debug.Log("Vertical");
-                Rigidbody2D m_Rigidbody = gameObject.GetComponent<Rigidbody2D>();
-                
-                //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-
+                coll.transform.position = waterSpawn.position;
             }
 
 
