@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 212316686802745518}
   - component: {fileID: 60240833525818536}
   - component: {fileID: 114048167368850764}
+  - component: {fileID: 114212627966633398}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -64,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531652223073976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.93127966, y: -3.4784026, z: 0}
+  m_LocalPosition: {x: -0.84358454, y: -22.940031, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4736565014880152}
@@ -193,6 +194,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterSpawn: {fileID: 4736565014880152}
+--- !u!114 &114212627966633398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531652223073976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d158f41ca331c4a44b5dd4405861658b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  offset: 0.05
 --- !u!212 &212316686802745518
 SpriteRenderer:
   m_ObjectHideFlags: 1

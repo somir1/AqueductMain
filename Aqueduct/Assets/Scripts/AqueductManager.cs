@@ -12,6 +12,10 @@ public class AqueductManager : MonoBehaviour
     int ductD = 3;
     int ductH = 3;
 
+    /*bool pressed = false;
+    public GUIContent btn;
+    int presses = 0;*/
+
     int Count = -1;
     bool picked = false;
 
@@ -30,10 +34,8 @@ public class AqueductManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
-        {
-            floorList.Add(fooObj);
-        }
+       // btn = GUI(new Rect(10, 10, 100, 20), "Hello World!");
+
 
         floorList = floorList.OrderBy(t => t.name).ToList();
 
@@ -46,6 +48,9 @@ public class AqueductManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       // if (Input.GetMouseButtonUp(0))
+         //   pressed = false;
+
         if (Input.GetKeyDown("1"))
         {
             Debug.Log("Duct Left: " + ductL);
@@ -126,7 +131,26 @@ public class AqueductManager : MonoBehaviour
                  floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
              }*/
         }
+
     }
+
+   /* void OnGUI()
+    {
+        
+
+        if (GUILayout.RepeatButton(btn))
+        {
+            if (!pressed)
+            {
+                presses++;
+                pressed = true;
+                targetObject = horizontalPrefab;
+        picked = true;
+            }
+        }
+
+        GUILayout.Label(presses.ToString());
+    }*/
 
     public void OnHorizontal() {
         targetObject = horizontalPrefab;
