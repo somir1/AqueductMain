@@ -120,37 +120,11 @@ public class AqueductManager : MonoBehaviour
                 Count++;
             }
 
-            /*if (Count == 2 || Count == 6)
-             {
-                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-                 floorList[Count + 1].GetComponent<PolygonCollider2D>().isTrigger = true;
-                 Count++;
-             }
-             else
-             {
-                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-             }*/
+         
         }
 
     }
 
-   /* void OnGUI()
-    {
-        
-
-        if (GUILayout.RepeatButton(btn))
-        {
-            if (!pressed)
-            {
-                presses++;
-                pressed = true;
-                targetObject = horizontalPrefab;
-        picked = true;
-            }
-        }
-
-        GUILayout.Label(presses.ToString());
-    }*/
 
     public void OnHorizontal() {
         targetObject = horizontalPrefab;
