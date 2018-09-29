@@ -10,6 +10,26 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void PlayLevel1 ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+
+    public void PlayLevel2 ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 2);
+    }
+
+    public void PlayLevel3 ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 3);
+    }
+
+    public void Info ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 6);
+    }
+
     public void Reload ()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
@@ -18,5 +38,11 @@ public class MainMenu : MonoBehaviour {
     public void LoadMainMenu ()
     {
         SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+
+    public void QuitGame ()
+    {
+        Debug.Log("Quitting...");
+        Application.Quit();
     }
 }

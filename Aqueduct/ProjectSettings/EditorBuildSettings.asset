@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/LiquidScene.unity
     guid: 3ed236335031c489cb19a10691b9369d
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 1f1507698dbd60647a0fd3b5addb845c
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 4e6da99b929ca5143a2efcb000347237
+  - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: de58f65fb5e5c9c4c8bf437be16c9f52
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 902edea98ecc9d049b74812ee0776adb
+  - enabled: 1
+    path: Assets/Scenes/Info.unity
+    guid: 13f6e3afede4f8346979ccdf6b665032
   m_configObjects: {}
