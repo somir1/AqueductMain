@@ -2737,10 +2737,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalScale: {x: 3.81893, y: 3.8189278, z: 3.8189278}
 =======
   m_LocalScale: {x: 1.5254977, y: 1.5254971, z: 1.5254971}
 >>>>>>> parent of 69415af... Button Images
+=======
+  m_LocalScale: {x: 1.5254977, y: 1.5254971, z: 1.5254971}
+>>>>>>> parent of b0701c9... menu stuff
   m_Children:
   - {fileID: 1125508733}
   m_Father: {fileID: 1096199910}

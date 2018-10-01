@@ -14,9 +14,4 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
     }
-
-    public void LoadMainMenu ()
-    {
-        SceneManager.LoadScene(sceneBuildIndex: 0);
-    }
 }
