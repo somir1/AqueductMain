@@ -128,6 +128,27 @@ public class AqueductManager : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+   /* void OnGUI()
+    {
+        
+
+        if (GUILayout.RepeatButton(btn))
+        {
+            if (!pressed)
+            {
+                presses++;
+                pressed = true;
+                targetObject = horizontalPrefab;
+        picked = true;
+            }
+        }
+
+        GUILayout.Label(presses.ToString());
+    }*/
+
+>>>>>>> parent of 69415af... Button Images
     public void OnHorizontal() {
         targetObject = horizontalPrefab;
         picked = true;
