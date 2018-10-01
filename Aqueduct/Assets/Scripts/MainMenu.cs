@@ -14,4 +14,12 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
     }
+<<<<<<< HEAD
+=======
+
+    public void LoadMainMenu ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+>>>>>>> parent of 9fe29c5... added some scenes and main menu buttons work
 }
