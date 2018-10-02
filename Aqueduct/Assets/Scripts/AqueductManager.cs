@@ -17,6 +17,7 @@ public class AqueductManager : MonoBehaviour
 
     Vector3 mousePosition, targetPosition;
 
+  
     float distance = 10f;
     public float speed = 1.5f;
     public Transform leftPrefab;
@@ -46,6 +47,7 @@ public class AqueductManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown("1"))
         {
             Debug.Log("Duct Left: " + ductL);
@@ -81,51 +83,55 @@ public class AqueductManager : MonoBehaviour
         if (picked == true)
             targetObject.position = targetPosition;
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (targetObject == leftPrefab && ductL > 0)
+        
+    }
+
+    public void Drop()
+    {
+
+       RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if (hit.collider != null)
             {
-                ductL--;
-                Debug.Log(ductL);
-                Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-                Count++;
+                if (hit.collider.tag == "Placeable") {
+                if (targetObject == leftPrefab && ductL > 0)
+                {
+                    ductL--;
+                    // Debug.Log(ductL);
+
+                    Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
+                    Count++;
+                }
+                else if (targetObject == rightPrefab && ductR > 0)
+                {
+                    ductR--;
+                    //Debug.Log(ductR);
+
+                    Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
+                    Count++;
+                }
+
+                else if (targetObject == horizontalPrefab && ductH > 0)
+                {
+                    ductH--;
+                    // Debug.Log(ductH);
+
+                    Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
+                    Count++;
+                }
+
+                else if (targetObject == downPrefab && ductD > 0)
+                {
+                    ductD--;
+                    //Debug.Log(ductD);
+
+                    Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
+                    Count++;
+                }
+            }
             }
 
-            else if (targetObject == rightPrefab && ductR > 0)
-            {
-                ductR--;
-                Debug.Log(ductR);
-                Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-                Count++;
-            }
-
-            else if (targetObject == horizontalPrefab && ductH > 0)
-            {
-                ductH--;
-                Debug.Log(ductH);
-                Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-                Count++;
-            }
-
-            else if (targetObject == downPrefab && ductD > 0)
-            {
-                ductD--;
-                Debug.Log(ductD);
-                Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-                Count++;
-            }
-
-            /*if (Count == 2 || Count == 6)
-             {
-                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-                 floorList[Count + 1].GetComponent<PolygonCollider2D>().isTrigger = true;
-                 Count++;
-             }
-             else
-             {
-                 floorList[Count].GetComponent<PolygonCollider2D>().isTrigger = true;
-             }*/
-        }
+       
     }
 
     public void OnHorizontal() {
@@ -147,6 +153,10 @@ public class AqueductManager : MonoBehaviour
         targetObject = rightPrefab;
         picked = true;
     }
+
+    
+    
+  
 }
 
 
