@@ -39,7 +39,8 @@ public class RightWaterLoss : MonoBehaviour
         {
             RightTriggerWaterLoss++;
             //Removing comment from Destroy(col.gameObject) creates an error in TransformFollower.cs 
-            //Destroy(col.gameObject);
+            Destroy(col.gameObject);
+            StartWater -= 1;
         }
     }
 
