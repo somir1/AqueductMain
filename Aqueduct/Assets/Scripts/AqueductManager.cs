@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 
 public class AqueductManager : MonoBehaviour
@@ -17,7 +18,11 @@ public class AqueductManager : MonoBehaviour
 
     Vector3 mousePosition, targetPosition;
 
-  
+    public Button leftButton;
+    public Button rightButton;
+    public Button vertButton;
+   
+
     float distance = 10f;
     public float speed = 1.5f;
     public Transform leftPrefab;
@@ -31,6 +36,8 @@ public class AqueductManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+
         foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
         {
             floorList.Add(fooObj);
@@ -47,7 +54,7 @@ public class AqueductManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (Input.GetKeyDown("1"))
         {
             Debug.Log("Duct Left: " + ductL);
@@ -83,17 +90,26 @@ public class AqueductManager : MonoBehaviour
         if (picked == true)
             targetObject.position = targetPosition;
 
-        
+
     }
 
     public void Drop()
     {
+        ColorBlock colors = leftButton.colors;
+        colors.normalColor = Color.white;
 
-       RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        leftButton.colors = colors;
 
-            if (hit.collider != null)
+        rightButton.colors = colors;
+
+        vertButton.colors = colors;
+
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.tag == "Placeable")
             {
-                if (hit.collider.tag == "Placeable") {
                 if (targetObject == leftPrefab && ductL > 0)
                 {
                     ductL--;
@@ -102,20 +118,12 @@ public class AqueductManager : MonoBehaviour
                     Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                     Count++;
                 }
+
                 else if (targetObject == rightPrefab && ductR > 0)
                 {
                     ductR--;
                     //Debug.Log(ductR);
-
-                    Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
-                    Count++;
-                }
-
-                else if (targetObject == horizontalPrefab && ductH > 0)
-                {
-                    ductH--;
-                    // Debug.Log(ductH);
-
+                  
                     Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                     Count++;
                 }
@@ -129,35 +137,45 @@ public class AqueductManager : MonoBehaviour
                     Count++;
                 }
             }
-            }
+        }
 
-       
+
     }
 
-    public void OnHorizontal() {
-        targetObject = horizontalPrefab;
-        picked = true;
-    }
+ 
+
     public void OnVertical()
     {
         targetObject = downPrefab;
         picked = true;
+
+        ColorBlock colors = vertButton.colors;
+        colors.normalColor = Color.green;
+
+        vertButton.colors = colors;       
     }
+
     public void OnLeft()
     {
         targetObject = leftPrefab;
         picked = true;
+        ColorBlock colors = leftButton.colors;
+        colors.normalColor = Color.green;
+        
+        leftButton.colors = colors;
+        
     }
+
     public void OnRight()
     {
         targetObject = rightPrefab;
         picked = true;
+        ColorBlock colors = rightButton.colors;
+        colors.normalColor = Color.green;
+        
+        rightButton.colors = colors;
+        
     }
 
-    
-    
-  
 }
-
-
 
