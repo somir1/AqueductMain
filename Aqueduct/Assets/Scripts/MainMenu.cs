@@ -5,29 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-	public void PlayGame ()
+    public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void PlayLevel1 ()
+    public void TaptoStart()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
     }
 
-    public void PlayLevel2 ()
+    public void PlayLevel1 ()
     {
         SceneManager.LoadScene(sceneBuildIndex: 2);
     }
 
-    public void PlayLevel3 ()
+    public void PlayLevel2 ()
     {
         SceneManager.LoadScene(sceneBuildIndex: 3);
     }
 
+    public void PlayLevel3 ()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 4);
+    }
+
     public void Info ()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 6);
+        SceneManager.LoadScene(sceneBuildIndex: 7);
     }
 
     public void Reload ()
@@ -37,7 +42,7 @@ public class MainMenu : MonoBehaviour {
 
     public void LoadMainMenu ()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 0);
+        SceneManager.LoadScene(sceneBuildIndex: 1);
     }
 
     public void QuitGame ()
