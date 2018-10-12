@@ -18,6 +18,10 @@ public class AqueductManager : MonoBehaviour
 
     Vector3 mousePosition, targetPosition;
 
+    public Transform GhostDuctL;
+    public Transform GhostDuctV;
+    public Transform GhostDuctR;
+
     public Button leftButton;
     public Button rightButton;
     public Button vertButton;
@@ -97,12 +101,18 @@ public class AqueductManager : MonoBehaviour
         if (picked == true)
             targetObject.position = targetPosition;
 
-
     }
 
     public void Drop()
     {
+        foreach (GameObject Obj in GameObject.FindGameObjectsWithTag("Ghost"))
+        {
+
+            Destroy(Obj);
+        }
+
         ColorBlock colors = leftButton.colors;
+
         colors.normalColor = Color.white;
 
         leftButton.colors = colors;
@@ -159,29 +169,36 @@ public class AqueductManager : MonoBehaviour
         ColorBlock colors = vertButton.colors;
         colors.normalColor = Color.green;
 
-        vertButton.colors = colors;       
+        vertButton.colors = colors;
+
+        Instantiate(GhostDuctV, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
+
     }
 
     public void OnLeft()
     {
         targetObject = leftPrefab;
         picked = true;
+
         ColorBlock colors = leftButton.colors;
         colors.normalColor = Color.green;
         
         leftButton.colors = colors;
-        
+
+        Instantiate(GhostDuctL, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
     }
 
     public void OnRight()
     {
         targetObject = rightPrefab;
         picked = true;
+
         ColorBlock colors = rightButton.colors;
         colors.normalColor = Color.green;
         
         rightButton.colors = colors;
-        
+
+        Instantiate(GhostDuctR, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
     }
 
 }
