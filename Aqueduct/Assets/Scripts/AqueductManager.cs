@@ -21,7 +21,11 @@ public class AqueductManager : MonoBehaviour
     public Button leftButton;
     public Button rightButton;
     public Button vertButton;
-   
+
+    public Image Number;
+    public Image NumberV;
+    public Image NumberR;
+    public Sprite[] Numbers;
 
     float distance = 10f;
     public float speed = 1.5f;
@@ -54,6 +58,9 @@ public class AqueductManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Number.GetComponent<Image>().sprite = Numbers[ductL];
+        NumberV.GetComponent<Image>().sprite = Numbers[ductD];
+        NumberR.GetComponent<Image>().sprite = Numbers[ductR];
 
         if (Input.GetKeyDown("1"))
         {
