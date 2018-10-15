@@ -8,6 +8,8 @@ TagManager:
   - Water
   - Placeable
   - Ghost
+  - Village
+  - PropertyManager
   layers:
   - Default
   - TransparentFX
