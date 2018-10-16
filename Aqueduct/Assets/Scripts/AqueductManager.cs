@@ -26,10 +26,6 @@ public class AqueductManager : MonoBehaviour
     public Button rightButton;
     public Button vertButton;
 
-    public Image redR;
-    public Image redV;
-    public Image redL;
-
     public Image Number;
     public Image NumberV;
     public Image NumberR;
@@ -48,9 +44,7 @@ public class AqueductManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        redV.enabled = false;
-        redL.enabled = false;
-        redR.enabled = false;
+
 
         foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
         {
@@ -71,19 +65,6 @@ public class AqueductManager : MonoBehaviour
         Number.GetComponent<Image>().sprite = Numbers[ductL];
         NumberV.GetComponent<Image>().sprite = Numbers[ductD];
         NumberR.GetComponent<Image>().sprite = Numbers[ductR];
-
-        if (ductD == 0) {
-            redV.enabled = true;
-        }
-        else if (ductR == 0)
-        {
-            redR.enabled = true;
-        }
-        else if (ductL == 0)
-        {
-            redL.enabled = true;
-        }
-
 
         if (Input.GetKeyDown("1"))
         {
