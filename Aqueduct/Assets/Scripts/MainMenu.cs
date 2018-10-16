@@ -42,7 +42,7 @@ public class MainMenu : MonoBehaviour {
 
     public void LoadMainMenu ()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 1);
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame ()
