@@ -352,6 +352,7 @@ MonoBehaviour:
   propertyDamage: 0
   totalItems: 0
   numItemsLost: 0
+  maxLoss: 0
 --- !u!4 &47954986
 Transform:
   m_ObjectHideFlags: 0

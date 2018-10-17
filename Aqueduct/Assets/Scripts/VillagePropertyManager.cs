@@ -8,9 +8,9 @@ public class VillagePropertyManager : MonoBehaviour {
     public List<GameObject> VillageItems = new List<GameObject>();
 
     public float propertyDamage = 0;
-    public int totalItems = 0;
-    public int numItemsLost = 0;
-    float maxLoss = 0;
+    public float totalItems = 0;
+    public float numItemsLost = 0;
+    public float maxLoss = 0;
 
     void Start () {
 
@@ -20,17 +20,20 @@ public class VillagePropertyManager : MonoBehaviour {
         }
 
         totalItems = VillageItems.Count;
+        //Debug.Log(totalItems);
 
-        maxLoss = totalItems / 2;
-        
+        maxLoss = 0.5f;
+        //Debug.Log(maxLoss);
+
     }
-	
-	void Update () {
 
-       // propertyDamage = numItemsLost / totalItems;
+    void Update () {
+
+        propertyDamage = (numItemsLost / totalItems);
         //Debug.Log(propertyDamage);
-        //if (propertyDamage <= maxLoss) {
-          //  SceneManager.LoadScene("Lose");
-        //}
+        
+        if (propertyDamage >= maxLoss) {
+            SceneManager.LoadScene("Lose");
+        }
 	}
 }
