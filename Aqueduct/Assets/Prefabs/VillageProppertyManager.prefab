@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114606901887973466}
   m_Layer: 0
   m_Name: VillageProppertyManager
-  m_TagString: Untagged
+  m_TagString: PropertyManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,3 +55,5 @@ MonoBehaviour:
   propertyDamage: 0
   totalItems: 0
   numItemsLost: 0
+  maxLoss: 0
+  progressBar: {fileID: 0}
