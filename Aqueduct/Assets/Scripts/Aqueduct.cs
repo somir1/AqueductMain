@@ -66,8 +66,6 @@ public class Aqueduct : MonoBehaviour
                 coll.transform.position = waterSpawn.position;
                 coll.rigidbody.velocity = new Vector3(0, 0, 0);
             }
-
-
         }
     }
 }
