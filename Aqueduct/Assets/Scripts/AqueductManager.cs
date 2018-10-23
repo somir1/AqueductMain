@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class AqueductManager : MonoBehaviour
 {
-    int ductL = 3;
-    int ductR = 3;
-    int ductD = 3;
-    int ductH = 3;
+    int ductL = 1;
+    int ductR = 1;
+    int ductD = 1;
+   
 
     int Count = -1;
     bool picked = false;
@@ -108,7 +108,7 @@ public class AqueductManager : MonoBehaviour
 
         if (Input.GetKeyDown("4"))
         {
-            Debug.Log("Duct Horizontal: " + ductH);
+           // Debug.Log("Duct Horizontal: " + ductH);
             targetObject = horizontalPrefab;
             picked = true;
         }
