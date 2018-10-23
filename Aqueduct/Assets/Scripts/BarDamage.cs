@@ -9,7 +9,9 @@ public class BarDamage : MonoBehaviour {
     public Image bar;
     //variable that sets the amount of fill you start with
     float startfill = 0f;
-    Collider2D wellcollider; 
+    Collider2D wellcollider;
+    public Transform waterSpawn;
+    public bool full = false;
     
 	// Use this for initialization
 
@@ -29,12 +31,36 @@ public class BarDamage : MonoBehaviour {
         if(coll.gameObject.tag == "Water")
         {
             bar.fillAmount += .2f;
-            if(bar.fillAmount == 1f)
+
+            if (full == false) {
+                Destroy(coll.gameObject);
+            }
+           
+
+            if (bar.fillAmount == 1f)
             {
-                wellcollider.enabled = false;
+                full = true;
                 
             }
         }
+
+        if (full == true) {
+
+            if (gameObject.tag == "Left")
+            {
+
+                coll.transform.position = waterSpawn.position;
+                coll.rigidbody.velocity = new Vector3(-0.2f, 0, 0);
+            }
+
+            if (gameObject.tag == "Right")
+            {
+                coll.transform.position = waterSpawn.position;
+                coll.rigidbody.velocity = new Vector3(0.2f, 0, 0);
+            }
+        }
+       
+
 
     }
 }

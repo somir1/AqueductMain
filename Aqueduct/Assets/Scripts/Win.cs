@@ -24,6 +24,7 @@ public class Win : MonoBehaviour
     {
         if (col.gameObject.tag == "Water")
         {
+            Destroy(col.gameObject);
             AmountNeededToWin++;
             if (AmountNeededToWin >= Mathf.Round((liquidGenarate._numLiquid * .5f)))
             {

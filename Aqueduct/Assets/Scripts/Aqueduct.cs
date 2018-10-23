@@ -6,11 +6,6 @@ public class Aqueduct : MonoBehaviour
 {
 
     int count = 0;
-
-   
-
-
-
     public Transform waterSpawn;
 
     // Use this for initialization
