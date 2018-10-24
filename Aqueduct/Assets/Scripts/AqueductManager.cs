@@ -11,7 +11,10 @@ public class AqueductManager : MonoBehaviour
     int ductL = 1;
     int ductR = 1;
     int ductD = 1;
-   
+
+    public AudioSource m_MyAudioSource;
+    public AudioClip clippp;
+
 
     int Count = -1;
     bool picked = false;
@@ -48,6 +51,8 @@ public class AqueductManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        m_MyAudioSource = GetComponent<AudioSource>();
+
         redV.enabled = false;
         redL.enabled = false;
         redR.enabled = false;
@@ -108,7 +113,7 @@ public class AqueductManager : MonoBehaviour
 
         if (Input.GetKeyDown("4"))
         {
-           // Debug.Log("Duct Horizontal: " + ductH);
+            // Debug.Log("Duct Horizontal: " + ductH);
             targetObject = horizontalPrefab;
             picked = true;
         }
@@ -124,6 +129,8 @@ public class AqueductManager : MonoBehaviour
 
     public void Drop()
     {
+        Play();
+
         foreach (GameObject Obj in GameObject.FindGameObjectsWithTag("Ghost"))
         {
 
@@ -159,7 +166,7 @@ public class AqueductManager : MonoBehaviour
                 {
                     ductR--;
                     //Debug.Log(ductR);
-                  
+
                     Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                     Count++;
                 }
@@ -178,7 +185,7 @@ public class AqueductManager : MonoBehaviour
 
     }
 
- 
+
 
     public void OnVertical()
     {
@@ -192,6 +199,8 @@ public class AqueductManager : MonoBehaviour
 
         Instantiate(GhostDuctV, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
 
+        //Play();
+
     }
 
     public void OnLeft()
@@ -201,10 +210,12 @@ public class AqueductManager : MonoBehaviour
 
         ColorBlock colors = leftButton.colors;
         colors.normalColor = Color.green;
-        
+
         leftButton.colors = colors;
 
         Instantiate(GhostDuctL, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
+
+        //Play();
     }
 
     public void OnRight()
@@ -214,10 +225,18 @@ public class AqueductManager : MonoBehaviour
 
         ColorBlock colors = rightButton.colors;
         colors.normalColor = Color.green;
-        
+
         rightButton.colors = colors;
 
         Instantiate(GhostDuctR, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
+
+       // Play();
+    }
+
+    void Play(){
+
+        m_MyAudioSource.mute= false;
+        m_MyAudioSource.Play();
     }
 
 }
