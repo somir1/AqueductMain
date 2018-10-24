@@ -253,6 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bar: {fileID: 114083514221077852}
   waterSpawn: {fileID: 4162064664244092}
+  full: 0
 --- !u!212 &212626213483637082
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -287,7 +288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 7d7757088224a4c49b0d590f159c2645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
