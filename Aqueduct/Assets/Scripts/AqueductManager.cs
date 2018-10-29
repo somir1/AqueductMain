@@ -80,11 +80,11 @@ public class AqueductManager : MonoBehaviour
         if (ductD == 0) {
             redV.enabled = true;
         }
-        else if (ductR == 0)
+        if (ductR == 0)
         {
             redR.enabled = true;
         }
-        else if (ductL == 0)
+        if (ductL == 0)
         {
             redL.enabled = true;
         }
