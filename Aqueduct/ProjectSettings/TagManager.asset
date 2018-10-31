@@ -12,7 +12,6 @@ TagManager:
   - PropertyManager
   - Left
   - Right
-  - GameControl
   layers:
   - Default
   - TransparentFX

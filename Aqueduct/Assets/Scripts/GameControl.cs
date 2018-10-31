@@ -7,13 +7,13 @@ using System.IO;
 
 public class GameControl : MonoBehaviour {
 
-    public static GameControl control;
+    public GameControl control;
 
     public int level1;
     public int level2;
     public int level3;
 
-    void Awake()
+    private void Awake()
     {
         if (control == null) {
             DontDestroyOnLoad(gameObject);
