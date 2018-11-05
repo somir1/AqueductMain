@@ -16,8 +16,6 @@ public class StarDisplay : MonoBehaviour
     void Start()
     {
         Control = GameObject.FindGameObjectsWithTag("GameControl");
-
-
     }
 
     // Update is called once per frame

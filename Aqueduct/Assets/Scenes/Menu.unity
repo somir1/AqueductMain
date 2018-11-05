@@ -553,6 +553,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 167115501}
+--- !u!1 &208924276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 208924278}
+  - component: {fileID: 208924277}
+  m_Layer: 0
+  m_Name: StarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &208924277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208924276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436e96ebe27a5cd479fedfa4b040978c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Control: []
+  Panels:
+  - {fileID: 1130882490}
+  - {fileID: 768409813}
+  - {fileID: 1285112459}
+  level1: 0
+  level2: 0
+  level3: 0
+--- !u!4 &208924278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208924276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -193.27869, y: 509.1383, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267178019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,10 +2342,10 @@ RectTransform:
   m_Father: {fileID: 315739368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8, y: -11}
-  m_SizeDelta: {x: 1137.5, y: 632.51}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -8.6, y: -76.5}
+  m_SizeDelta: {x: 1517.3, y: 893.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151299130
 MonoBehaviour:
@@ -2318,7 +2366,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0b549d8f10a794c4786e99e5b045c2b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01c090fba07eaf34a964427779cd782b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3318,7 +3366,7 @@ GameObject:
   - component: {fileID: 1725879674}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameControl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3334,7 +3382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9c6713252aaa94bbd312cc9a249f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control: {fileID: 0}
   level1: 0
   level2: 0
   level3: 0
