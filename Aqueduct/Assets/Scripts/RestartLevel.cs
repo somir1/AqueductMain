@@ -7,7 +7,7 @@ public class RestartLevel : MonoBehaviour {
 
 	public void RestartCurrentLevel()
     {
-        Debug.Log("Scene Reloaded");
-        SceneManager.LoadScene("LiquidScene");
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
     }
 }

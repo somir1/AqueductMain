@@ -12,8 +12,9 @@ public class Lose : MonoBehaviour {
 
     public void ReloadLevel ()
     {
-        SceneManager.LoadScene("LiquidScene");
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
     }
-    
+
 
 }

@@ -7,8 +7,11 @@ public class Property : MonoBehaviour {
     public GameObject manager;
     int Hits =  0;
 
-	// Use this for initialization
-	void Start () {
+    public Sprite MidDamage;
+    public Sprite FullDamage;
+
+    // Use this for initialization
+    void Start () {
 
   
     }
@@ -26,8 +29,20 @@ public class Property : MonoBehaviour {
 
             if (Hits == 5) {
                 GetComponent<PolygonCollider2D>().isTrigger = true;
-                GetComponent<SpriteRenderer>().color = new Color(0,0,0);
+               // GetComponent<SpriteRenderer>().color = new Color(0,0,0);
                 manager.GetComponent<VillagePropertyManager>().numItemsLost ++;
+            }
+
+            if (Hits == 2)
+            {
+
+                GetComponent<SpriteRenderer>().sprite = MidDamage;
+            }
+
+            if (Hits == 4)
+            {
+
+                GetComponent<SpriteRenderer>().sprite = FullDamage;
             }
         }
     }
