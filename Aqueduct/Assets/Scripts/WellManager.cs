@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WellManager : MonoBehaviour {
 
+    public GameObject[] Control;
     public GameObject Panel;
     public GameObject[] Wells;
     public bool[] fulls;
@@ -17,7 +19,7 @@ public class WellManager : MonoBehaviour {
             fulls[i] = false;
         }
 
-       
+        Control = GameObject.FindGameObjectsWithTag("GameControl");
     }
 	
 	// Update is called once per frame
@@ -64,12 +66,64 @@ public class WellManager : MonoBehaviour {
                 if (count == 1)
                 {
                     Panel.GetComponent<Stars>().show0.SetActive(true);
+
+                    if (SceneManager.GetActiveScene().name == "Level1")
+                    {
+
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level1 = 1;
+                        }
+
+                    }
+
+                    if (SceneManager.GetActiveScene().name == "Level2")
+                    {
+
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level2 = 1;
+                        }
+
+                    }
+
+                    if (SceneManager.GetActiveScene().name == "Level3")
+                    {
+
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level3 = 1;
+                        }
+
+                    }
                 }
 
                 if (count == 2)
                 {
                     Panel.GetComponent<Stars>().show0.SetActive(true);
                     Panel.GetComponent<Stars>().show1.SetActive(true);
+
+                    if (SceneManager.GetActiveScene().name == "Level1")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level1 = 2;
+                        }
+                    }
+                    if (SceneManager.GetActiveScene().name == "Level2")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level2 = 2;
+                        }
+                    }
+                    if (SceneManager.GetActiveScene().name == "Level3")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level3 = 2;
+                        }
+                    }
                 }
 
                 if (count == 3)
@@ -77,6 +131,28 @@ public class WellManager : MonoBehaviour {
                     Panel.GetComponent<Stars>().show0.SetActive(true);
                     Panel.GetComponent<Stars>().show1.SetActive(true);
                     Panel.GetComponent<Stars>().show2.SetActive(true);
+
+                    if (SceneManager.GetActiveScene().name == "Level1")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level1 = 3;
+                        }
+                    }
+                    if (SceneManager.GetActiveScene().name == "Level2")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level2 = 3;
+                        }
+                    }
+                    if (SceneManager.GetActiveScene().name == "Level3")
+                    {
+                        foreach (GameObject con in Control)
+                        {
+                            con.GetComponent<GameControl>().level3 = 3;
+                        }
+                    }
                 }
 
                 
