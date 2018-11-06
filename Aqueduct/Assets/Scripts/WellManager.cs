@@ -11,24 +11,30 @@ public class WellManager : MonoBehaviour {
     public bool[] fulls;
     int numWater = 0 ;
     int count=0;
+
    
     // Use this for initialization
     void Start () {
+
+        Debug.Log(SceneManager.GetActiveScene().name);
 
         for (int i = 0; i < fulls.Length; i++) {
             fulls[i] = false;
         }
 
         Control = GameObject.FindGameObjectsWithTag("GameControl");
+        foreach (GameObject con in Control)
+        {
+            con.GetComponent<GameControl>().lastLevel = SceneManager.GetActiveScene().name;
+        }
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-     
+      
 
-       
-	}
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

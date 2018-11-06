@@ -12,6 +12,7 @@ public class GameControl : MonoBehaviour {
     public int level1;
     public int level2;
     public int level3;
+    public string lastLevel;
 
     void Awake()
     {
@@ -23,7 +24,10 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    
+    private void Update()
+    {
+        //Debug.Log(lastLevel);
+    }
 
     public void Save() {
         BinaryFormatter bf = new BinaryFormatter();
