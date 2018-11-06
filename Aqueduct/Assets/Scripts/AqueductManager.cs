@@ -46,7 +46,7 @@ public class AqueductManager : MonoBehaviour
     public Transform horizontalPrefab;
     private Transform targetObject;
 
-    public List<GameObject> floorList = new List<GameObject>();
+   // public List<GameObject> floorList = new List<GameObject>();
 
     // Use this for initialization
     void Start()
@@ -57,17 +57,17 @@ public class AqueductManager : MonoBehaviour
         redL.enabled = false;
         redR.enabled = false;
 
-        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
-        {
-            floorList.Add(fooObj);
-        }
+       // foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
+        //{
+          //  floorList.Add(fooObj);
+        //}
 
-        floorList = floorList.OrderBy(t => t.name).ToList();
+        //floorList = floorList.OrderBy(t => t.name).ToList();
 
-        foreach (GameObject floor in floorList)
-        {
+        //foreach (GameObject floor in floorList)
+        //{
             // Debug.Log(floor.name);
-        }
+        //}
     }
 
     // Update is called once per frame
