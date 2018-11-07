@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -930,7 +930,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 174575849}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1720197219}
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &174575849
@@ -8280,9 +8291,9 @@ MonoBehaviour:
   dialogue:
     name: Dwayne Johnson
     sentences:
-    - 
-    - 
-    - 
+    - Sentence 1
+    - "Sentence 2 \t"
+    - 'Sentence 3 '
 --- !u!1 &1828441641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8540,7 +8551,6 @@ MonoBehaviour:
   downPrefab: {fileID: 4144307656469216, guid: 0079408cbd81e824a98d0a630b5c1c9d, type: 2}
   horizontalPrefab: {fileID: 4199223639266754, guid: 3773932042f5be247bcd0f0621649979,
     type: 2}
-  floorList: []
 --- !u!4 &1836499552
 Transform:
   m_ObjectHideFlags: 0
