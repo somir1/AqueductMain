@@ -1561,11 +1561,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0, y: 0.5}
-      - {x: 0.30635917, y: -0.044827253}
-      - {x: 0.11780012, y: -0.20930769}
       - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.1906959, y: 0.17828073}
-      - {x: -0.11207435, y: 0.19763616}
+      - {x: 0.34850022, y: -0.08022951}
 --- !u!212 &443375000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1618,7 +1615,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 443374998}
   m_LocalRotation: {x: -0, y: -0, z: 0.13172857, w: -0.99128586}
-  m_LocalPosition: {x: -6.03, y: -30.53, z: 0}
+  m_LocalPosition: {x: -6.06, y: -30.52, z: 0}
   m_LocalScale: {x: 5.3677444, y: 19.552769, z: 1}
   m_Children:
   - {fileID: 1981272259}
@@ -3221,11 +3218,11 @@ Prefab:
     - target: {fileID: 224781834394059142, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1082906575046604, guid: 530e629ca532f384d9f76ad6894c0048, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 530e629ca532f384d9f76ad6894c0048, type: 2}
@@ -3298,8 +3295,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1080166149}
   m_LocalRotation: {x: -0, y: -0, z: -0.000059022794, w: 1}
-  m_LocalPosition: {x: -5.57, y: -28.78, z: 0}
-  m_LocalScale: {x: 3.0983212, y: 3.098324, z: 3.098324}
+  m_LocalPosition: {x: -5.91, y: -29.515, z: 0}
+  m_LocalScale: {x: 3.4786248, y: 3.430293, z: 3.098324}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 43

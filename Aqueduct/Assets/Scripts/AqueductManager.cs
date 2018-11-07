@@ -8,9 +8,9 @@ using UnityEngine.UI;
 
 public class AqueductManager : MonoBehaviour
 {
-    int ductL = 1;
-    int ductR = 1;
-    int ductD = 1;
+    int ductL = 3;
+    int ductR = 3;
+    int ductD = 3;
 
     public AudioSource m_MyAudioSource;
     public AudioClip clippp;
@@ -45,8 +45,9 @@ public class AqueductManager : MonoBehaviour
     public Transform downPrefab;
     public Transform horizontalPrefab;
     private Transform targetObject;
+   
 
-   // public List<GameObject> floorList = new List<GameObject>();
+    // public List<GameObject> floorList = new List<GameObject>();
 
     // Use this for initialization
     void Start()
@@ -160,6 +161,7 @@ public class AqueductManager : MonoBehaviour
 
                     Instantiate(targetObject, targetObject.transform.position, targetObject.transform.rotation);
                     Count++;
+
                 }
 
                 else if (targetObject == rightPrefab && ductR > 0)
@@ -199,6 +201,7 @@ public class AqueductManager : MonoBehaviour
 
         Instantiate(GhostDuctV, new Vector3(0.0f, -10.0f, 0.0f), targetObject.transform.rotation);
 
+        
         //Play();
 
     }
