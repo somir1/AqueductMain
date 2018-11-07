@@ -28,12 +28,12 @@ public class DragAndDrop : MonoBehaviour
                 GetComponent<SpriteRenderer>().color = new Color(0.37f, 0.86f, 0.0f, 1.0f);
             }
             else {
-                GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.35f, 0.25f, 1.0f);
+                GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.35f, 0.25f, 1.0f);
             }
         }
         else
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
+            GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.35f, 0.25f, 1.0f);
         }
     }
 }
