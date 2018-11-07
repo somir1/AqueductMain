@@ -7910,6 +7910,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9580fd170a626c44daefa6fc68c51779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 297429343}
+  dialogueText: {fileID: 1368485474}
 --- !u!4 &1720197220
 Transform:
   m_ObjectHideFlags: 0
