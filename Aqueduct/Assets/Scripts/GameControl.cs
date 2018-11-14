@@ -36,18 +36,16 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    void Update()
+    public void SetLevels()
     {
         if (SceneManager.GetActiveScene().name == "Menu"){
 
             button2 = GameObject.FindGameObjectsWithTag("Button2");
             button3 = GameObject.FindGameObjectsWithTag("Button3");
 
-
             foreach (GameObject con in button2)
             {
                 b2 = con.GetComponent<Button>();
-
             }
 
 
@@ -69,6 +67,7 @@ public class GameControl : MonoBehaviour {
         }
 
     }
+
 
    
 
