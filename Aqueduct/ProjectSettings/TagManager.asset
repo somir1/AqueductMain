@@ -13,6 +13,9 @@ TagManager:
   - Left
   - Right
   - GameControl
+  - Button1
+  - Button2
+  - Button3
   layers:
   - Default
   - TransparentFX

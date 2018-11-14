@@ -143,6 +143,7 @@ public class WellManager : MonoBehaviour {
                         foreach (GameObject con in Control)
                         {
                             con.GetComponent<GameControl>().level1 = 3;
+                            con.GetComponent<GameControl>().currentLevel = 1;
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level2")
@@ -150,6 +151,7 @@ public class WellManager : MonoBehaviour {
                         foreach (GameObject con in Control)
                         {
                             con.GetComponent<GameControl>().level2 = 3;
+                            con.GetComponent<GameControl>().currentLevel = 2;
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level3")
@@ -157,6 +159,7 @@ public class WellManager : MonoBehaviour {
                         foreach (GameObject con in Control)
                         {
                             con.GetComponent<GameControl>().level3 = 3;
+                            con.GetComponent<GameControl>().currentLevel = 3;
                         }
                     }
                 }

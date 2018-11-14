@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 608364070}
   m_Layer: 5
   m_Name: ButtonLVL1
-  m_TagString: Untagged
+  m_TagString: Button1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1313,7 +1313,7 @@ GameObject:
   - component: {fileID: 787179891}
   m_Layer: 5
   m_Name: ButtonLVL2
-  m_TagString: Untagged
+  m_TagString: Button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2262,7 +2262,7 @@ GameObject:
   - component: {fileID: 1315473800}
   m_Layer: 5
   m_Name: ButtonLVL3
-  m_TagString: Untagged
+  m_TagString: Button3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2950,6 +2950,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9c6713252aaa94bbd312cc9a249f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  button1: []
+  button2: []
+  button3: []
+  b2: {fileID: 0}
+  b3: {fileID: 0}
   level1: 0
   level2: 0
   level3: 0
