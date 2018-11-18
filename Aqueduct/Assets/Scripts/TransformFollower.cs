@@ -6,8 +6,9 @@ using System.Linq;
 
 public class TransformFollower : MonoBehaviour
 {
+
     [SerializeField]
-    private Transform target;
+    public Transform target;
 
     [SerializeField]
     private Vector3 offsetPosition;
@@ -30,6 +31,8 @@ public class TransformFollower : MonoBehaviour
     int minDistanceToFinishIndex;
 
     int waterListNullCount;
+
+    bool finished = false;
 
 
     private void Start()
@@ -70,7 +73,7 @@ public class TransformFollower : MonoBehaviour
             minDistanceToFinish = dist.Min();
             minDistanceToFinishIndex = dist.ToList().IndexOf(minDistanceToFinish);
 
-            if (waterList[minDistanceToFinishIndex] != null)
+            if (waterList[minDistanceToFinishIndex] != null && finished == false)
             {
                 target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
             }
@@ -79,6 +82,12 @@ public class TransformFollower : MonoBehaviour
 
 
 
+    }
+
+    public void setFinishCam() {
+        finished = true;
+        target = GetComponent<Transform>();
+        
     }
 
     void Wait()
@@ -94,12 +103,7 @@ public class TransformFollower : MonoBehaviour
 
             waterList.Add(fooObj);
         }
-        sortList();
-
-    }
-
-    void sortList()
-    {
+        
 
     }
 

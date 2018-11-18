@@ -16,6 +16,7 @@ TagManager:
   - Button1
   - Button2
   - Button3
+  - ExtendCamera
   layers:
   - Default
   - TransparentFX

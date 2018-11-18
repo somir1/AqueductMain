@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class WellManager : MonoBehaviour {
 
     public GameObject[] Control;
+   
     public GameObject Panel;
     public GameObject[] Wells;
     public bool[] fulls;

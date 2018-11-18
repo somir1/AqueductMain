@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class AqueductManager : MonoBehaviour
@@ -58,16 +59,34 @@ public class AqueductManager : MonoBehaviour
         redL.enabled = false;
         redR.enabled = false;
 
-       // foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
+        if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            ductL = 0;
+            ductD = 1;
+            ductR = 1;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level2")
+        {
+            ductL = 3;
+            ductD = 3;
+            ductR = 3;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            ductL = 3;
+            ductD = 3;
+            ductR = 3;
+        }
+        // foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
         //{
-          //  floorList.Add(fooObj);
+        //  floorList.Add(fooObj);
         //}
 
         //floorList = floorList.OrderBy(t => t.name).ToList();
 
         //foreach (GameObject floor in floorList)
         //{
-            // Debug.Log(floor.name);
+        // Debug.Log(floor.name);
         //}
     }
 
