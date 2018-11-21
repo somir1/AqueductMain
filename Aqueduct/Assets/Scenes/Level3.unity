@@ -5193,7 +5193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1096199907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5810,6 +5810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   liquidGenarate: {fileID: 1506938071}
   AmountNeededToWin: 0
+  MainCam: []
+  ExtendCam: []
 --- !u!212 &1188778811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7906,7 +7908,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8724,6 +8726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MyAudioSource: {fileID: 1836499553}
   clippp: {fileID: 8300000, guid: bde0c45ce2f56a944abe61be3d50d64f, type: 3}
+  anoyingCanvas: {fileID: 1096199906}
   GhostDuctL: {fileID: 4215135946905230, guid: a94d3fafec7aefc4b93aa76bbf2d85c8, type: 2}
   GhostDuctV: {fileID: 4955738008613476, guid: 31299de68c633bc4b8def1b84aae3d98, type: 2}
   GhostDuctR: {fileID: 4262160978736856, guid: 846eb85a5e9eb7545a32a6c7a2fb040f, type: 2}

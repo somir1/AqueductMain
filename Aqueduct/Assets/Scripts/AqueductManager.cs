@@ -16,6 +16,7 @@ public class AqueductManager : MonoBehaviour
     public AudioSource m_MyAudioSource;
     public AudioClip clippp;
 
+    public GameObject anoyingCanvas;
 
     int Count = -1;
     bool picked = false;
@@ -53,6 +54,11 @@ public class AqueductManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+        if (!anoyingCanvas.activeInHierarchy){
+            anoyingCanvas.SetActive(true);
+            Debug.Log("ASS");
+        }
         m_MyAudioSource = GetComponent<AudioSource>();
 
         redV.enabled = false;
@@ -67,9 +73,9 @@ public class AqueductManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Level2")
         {
-            ductL = 3;
-            ductD = 3;
-            ductR = 3;
+            ductL = 1;
+            ductD = 2;
+            ductR = 2;
         }
         else if (SceneManager.GetActiveScene().name == "Level3")
         {

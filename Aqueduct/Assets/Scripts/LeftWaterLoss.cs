@@ -47,7 +47,7 @@ public class LeftWaterLoss : MonoBehaviour
 
     public void LeftLoseCondition()
     {
-        Debug.Log("You lost " + LeftTriggerWaterLoss + " water from the right. And " + AmountRightLost + " from the left. You lose a total of " + TotalLiquidLost + "water");
+       // Debug.Log("You lost " + LeftTriggerWaterLoss + " water from the right. And " + AmountRightLost + " from the left. You lose a total of " + TotalLiquidLost + "water");
 
         if (TotalLiquidLost >= (StartWater * .5) + .5)
         {
