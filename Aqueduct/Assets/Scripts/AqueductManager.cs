@@ -57,7 +57,7 @@ public class AqueductManager : MonoBehaviour
 
         if (!anoyingCanvas.activeInHierarchy){
             anoyingCanvas.SetActive(true);
-            Debug.Log("ASS");
+           
         }
         m_MyAudioSource = GetComponent<AudioSource>();
 

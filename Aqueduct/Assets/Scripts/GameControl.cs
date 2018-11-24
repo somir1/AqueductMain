@@ -12,6 +12,9 @@ public class GameControl : MonoBehaviour {
     public static GameControl control;
 
     public int currentLevel = 0;
+    public int setCount1 = 0;
+    public int setCount2 = 0;
+    public int setCount3 = 0;
     int[] levels;
 
     public GameObject[] button1;
@@ -20,6 +23,10 @@ public class GameControl : MonoBehaviour {
 
     public Button b2;
     public Button b3;
+
+    public bool level1Finished = false;
+    public bool level2Finished = false;
+    public bool level3Finished = false;
 
     public int level1;
     public int level2;
@@ -54,16 +61,54 @@ public class GameControl : MonoBehaviour {
                 b3 = con.GetComponent<Button>();
             }
 
-            if (currentLevel == 1) {
-                b2.interactable = !b2.interactable;
 
+
+            /*if (currentLevel >= 3)
+            {
+                b2.interactable = true;
+                b3.interactable = true;
+            }
+            else if (currentLevel == 2)
+            {
+                b2.interactable = true;
+                b3.interactable = true;
+            }
+            else  if (currentLevel == 1 ) {
+                b2.interactable = true;
+                b3.interactable = false;
+            }
+            else if (currentLevel == 0) {
+                b2.interactable = false;
+                b3.interactable = false;
+                
+            }*/
+
+            if (level1Finished == false && level2Finished == false && level3Finished == false) {
+                Debug.Log("all false");
+                b2.interactable = false;
+                b3.interactable = false;
+            }
+            if (level1Finished == true && level2Finished == false && level3Finished == false)
+            {
+                Debug.Log("1 true");
+                b2.interactable = true;
+                b3.interactable = false;
+            }
+            if (level1Finished == true && level2Finished == true && level3Finished == false)
+            {
+                Debug.Log("2 true");
+                b2.interactable = true;
+                b3.interactable = true;
+            }
+            if (level1Finished == true && level2Finished == true && level3Finished == true)
+            {
+                Debug.Log("2 true");
+                b2.interactable = true;
+                b3.interactable = true;
             }
 
-            if (currentLevel == 0) {
-                b2.interactable = !b2.interactable;
-                b3.interactable = !b3.interactable;
 
-            }
+
         }
 
     }

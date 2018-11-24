@@ -79,7 +79,10 @@ public class WellManager : MonoBehaviour {
 
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level1 = 1;
+                            if (con.GetComponent<GameControl>().level1 < 1)
+                            {
+                                con.GetComponent<GameControl>().level1 = 1;
+                            }
                         }
 
                     }
@@ -89,7 +92,10 @@ public class WellManager : MonoBehaviour {
 
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level2 = 1;
+                            if (con.GetComponent<GameControl>().level2 < 1)
+                            {
+                                con.GetComponent<GameControl>().level2 = 1;
+                            }
                         }
 
                     }
@@ -99,7 +105,10 @@ public class WellManager : MonoBehaviour {
 
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level3 = 1;
+                            if (con.GetComponent<GameControl>().level3 < 1)
+                            {
+                                con.GetComponent<GameControl>().level3 = 1;
+                            }
                         }
 
                     }
@@ -114,21 +123,31 @@ public class WellManager : MonoBehaviour {
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level1 = 2;
+                            if (con.GetComponent<GameControl>().level1 < 2)
+                            {
+                                con.GetComponent<GameControl>().level1 = 2;
+                            }
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level2")
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level2 = 2;
+                            if (con.GetComponent<GameControl>().level2 < 2)
+                            {
+                                con.GetComponent<GameControl>().level2 = 2;
+                            }
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level3")
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level3 = 2;
+
+                            if (con.GetComponent<GameControl>().level3 < 2) {
+                                con.GetComponent<GameControl>().level3 = 2;
+                            }
+
                         }
                     }
                 }
@@ -143,24 +162,43 @@ public class WellManager : MonoBehaviour {
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level1 = 3;
-                            con.GetComponent<GameControl>().currentLevel = 1;
+                            
+                            if (con.GetComponent<GameControl>().level1Finished == false)
+                            {
+                                con.GetComponent<GameControl>().level1 = 3;
+                                con.GetComponent<GameControl>().currentLevel++;
+                                con.GetComponent<GameControl>().level1Finished = true;
+                            }
+                            
+                            
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level2")
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level2 = 3;
-                            con.GetComponent<GameControl>().currentLevel = 2;
+
+                            if (con.GetComponent<GameControl>().level2Finished == false)
+                            {
+                                con.GetComponent<GameControl>().level2 = 3;
+                                con.GetComponent<GameControl>().currentLevel++;
+                                con.GetComponent<GameControl>().level2Finished = true;
+                            }
+                            
                         }
                     }
                     if (SceneManager.GetActiveScene().name == "Level3")
                     {
                         foreach (GameObject con in Control)
                         {
-                            con.GetComponent<GameControl>().level3 = 3;
-                            con.GetComponent<GameControl>().currentLevel = 3;
+
+                            if (con.GetComponent<GameControl>().level3Finished == false)
+                            {
+                                con.GetComponent<GameControl>().level3 = 3;
+                                con.GetComponent<GameControl>().currentLevel++;
+                                con.GetComponent<GameControl>().level3Finished = true;
+                            }
+                            
                         }
                     }
                 }

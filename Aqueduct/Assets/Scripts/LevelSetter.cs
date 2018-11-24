@@ -8,13 +8,13 @@ public class LevelSetter : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        Debug.Log("BOI");
         Control = GameObject.FindGameObjectsWithTag("GameControl");
 
-        foreach (GameObject con in Control)
-        {
-            con.GetComponent<GameControl>().SetLevels();
-        }
+       
+        Control[0].GetComponent<GameControl>().SetLevels();
+          
+        
 
     }
 	
