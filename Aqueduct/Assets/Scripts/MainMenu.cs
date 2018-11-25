@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour {
 
     public void Info ()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 7);
+        SceneManager.LoadScene("HowToPlay");
     }
 
     public void Reload ()
