@@ -43,6 +43,9 @@ public class TransformFollower : MonoBehaviour
     }
     private void Update()
     {
+
+        
+
         if (waitTime > 0 && wait == true)
         {
             waitTime -= Time.deltaTime;
@@ -56,7 +59,14 @@ public class TransformFollower : MonoBehaviour
 
         if (wait == false)
         {
-            for (int i = 0; i < 10; i++)
+
+            for (var i = waterList.Count - 1; i > -1; i--)
+            {
+                if (waterList[i] == null)
+                    waterList.RemoveAt(i);
+            }
+
+            for (int i = 0; i < waterList.Count ; i++)
             {
                 if (waterList[i] != null)
                 {
@@ -66,17 +76,24 @@ public class TransformFollower : MonoBehaviour
                 {
                     waterListNullCount++;
                 }
-                if (waterListNullCount >= 8)
-                    Wait();
+               // if (waterListNullCount >= 8)
+                   // Wait();
             }
 
             minDistanceToFinish = dist.Min();
             minDistanceToFinishIndex = dist.ToList().IndexOf(minDistanceToFinish);
 
+           
+
             if (waterList[minDistanceToFinishIndex] != null && finished == false)
             {
                 target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
+               
             }
+
+            
+            Refresh();
+
         }
 
 
@@ -107,34 +124,33 @@ public class TransformFollower : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+   public void Refresh()
     {
+
+        
+
         if (target == null)
         {
-            //Debug.LogWarning("Missing target ref !", this);
+            Debug.LogWarning("Missing target ref !", this);
            
             return;
         }
 
-        for (var i = waterList.Count - 1; i > -1; i--)
-        {
-            if (waterList[i] == null)
-                waterList.RemoveAt(i);
-        }
+       
 
         // compute position
-        if (offsetPositionSpace == Space.Self)
+        if (offsetPositionSpace == Space.Self && finished == false)
         {
             // transform.position = target.TransformPoint(offsetPosition);
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 6.66f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 1.0f * Time.deltaTime);
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
             transform.position = pos;
         }
-        else
+        else if(finished == false)
         {
             //transform.position = target.position + offsetPosition;
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 6.66f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 1.0f * Time.deltaTime);
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
             transform.position = pos;
@@ -147,7 +163,7 @@ public class TransformFollower : MonoBehaviour
         }
         else
         {
-            transform.rotation = target.rotation;
+            //transform.rotation = target.rotation;
         }
     }
 }

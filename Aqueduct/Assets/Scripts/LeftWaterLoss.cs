@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LeftWaterLoss : MonoBehaviour
 {
@@ -18,11 +19,15 @@ public class LeftWaterLoss : MonoBehaviour
     //variable used to store the total amount of water that is lost from both the left and right trigger. 
     public float TotalLiquidLost;
 
+    public Image bumper;
+    float showTime = .5f;
+    bool show = false;
 
     // Use this for initialization
     void Start()
     {
         StartWater = liquidGenarate._numLiquid;
+        bumper.enabled = false;
     }
 
     private void Update()
@@ -32,12 +37,26 @@ public class LeftWaterLoss : MonoBehaviour
         AmountRightLost = rightLiquidLost.RightTriggerWaterLoss;
         TotalLiquidLost = LeftTriggerWaterLoss + AmountRightLost;
         LeftLoseCondition();
+
+        if (showTime > 0 && show == true)
+        {
+            showTime -= Time.deltaTime;
+            bumper.enabled = true;
+
+        }
+        if (showTime < 0)
+        {
+            show = false;
+            bumper.enabled = false;
+            showTime = 0.5f;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Water")
         {
+            showB();
             LeftTriggerWaterLoss++;
             //Removing comment from Destroy(col.gameObject) creates an error in TransformFollower.cs 
            Destroy(col.gameObject);
@@ -53,6 +72,12 @@ public class LeftWaterLoss : MonoBehaviour
         {
             SceneManager.LoadScene("Lose");
         }
+    }
+
+    void showB()
+    {
+        show = true;
+
     }
 
 }
