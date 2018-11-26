@@ -112,20 +112,32 @@ public class TransformFollower : MonoBehaviour
         if (target == null)
         {
             //Debug.LogWarning("Missing target ref !", this);
-
+           
             return;
+        }
+
+        for (var i = waterList.Count - 1; i > -1; i--)
+        {
+            if (waterList[i] == null)
+                waterList.RemoveAt(i);
         }
 
         // compute position
         if (offsetPositionSpace == Space.Self)
         {
             // transform.position = target.TransformPoint(offsetPosition);
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 6.66f * Time.deltaTime);
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
+            transform.position = pos;
         }
         else
         {
             //transform.position = target.position + offsetPosition;
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 2f * Time.deltaTime);
+            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 6.66f * Time.deltaTime);
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
+            transform.position = pos;
         }
 
         // compute rotation

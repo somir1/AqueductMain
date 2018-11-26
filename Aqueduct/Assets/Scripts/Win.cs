@@ -35,6 +35,7 @@ public class Win : MonoBehaviour
             count++;
             if (count == 1)
             {
+                Debug.Log("yee");
                 foreach (GameObject obj in MainCam)
                 {
                     obj.GetComponent<TransformFollower>().setFinishCam();
