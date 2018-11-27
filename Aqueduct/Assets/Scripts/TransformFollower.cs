@@ -144,6 +144,7 @@ public class TransformFollower : MonoBehaviour
             // transform.position = target.TransformPoint(offsetPosition);
             transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.TransformPoint(offsetPosition), 1.0f * Time.deltaTime);
             Vector3 pos = transform.position;
+            pos.y = Mathf.Clamp(transform.position.y, -10000.0f, 0.0f);
             pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
             transform.position = pos;
         }
@@ -152,6 +153,7 @@ public class TransformFollower : MonoBehaviour
             //transform.position = target.position + offsetPosition;
             transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, transform.position.z), target.position + offsetPosition, 1.0f * Time.deltaTime);
             Vector3 pos = transform.position;
+            pos.y = Mathf.Clamp(transform.position.y, -10000.0f, 0.0f);
             pos.x = Mathf.Clamp(transform.position.x, 0.0f, 0.0f);
             transform.position = pos;
         }
