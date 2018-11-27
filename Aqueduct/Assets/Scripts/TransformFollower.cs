@@ -60,16 +60,20 @@ public class TransformFollower : MonoBehaviour
         if (wait == false)
         {
 
-            for (var i = waterList.Count - 1; i > -1; i--)
+            for (var i = waterList.Count -1; i > -1; i--)
             {
                 if (waterList[i] == null)
-                   
+                {
+
                     waterList.RemoveAt(i);
+                    // GroupResize(waterList.Count, dist);
+                    dist[i] = 9999.9f;
+                }
             }
 
             for (int i = 0; i < waterList.Count ; i++)
             {
-                if (waterList[i] != null)
+                if (waterList[i] != null && dist[i] != 9999.9f)
                 {
                     dist[i] = Vector2.Distance(Bottom.transform.position, waterList[i].transform.position);
                 }
@@ -86,7 +90,7 @@ public class TransformFollower : MonoBehaviour
 
            
 
-            if (waterList[minDistanceToFinishIndex] != null && finished == false)
+            if (waterList[minDistanceToFinishIndex] != null && dist[minDistanceToFinishIndex] != 999.9f && finished == false)
             {
                 target = waterList[minDistanceToFinishIndex].GetComponent<Transform>();
                
@@ -101,6 +105,8 @@ public class TransformFollower : MonoBehaviour
 
 
     }
+
+  
 
     public void setFinishCam() {
         finished = true;

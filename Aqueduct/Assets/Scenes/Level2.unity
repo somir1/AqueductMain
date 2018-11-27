@@ -316,7 +316,6 @@ GameObject:
   m_Component:
   - component: {fileID: 16689751}
   - component: {fileID: 16689750}
-  - component: {fileID: 16689752}
   - component: {fileID: 16689749}
   m_Layer: 0
   m_Name: FloorA
@@ -412,17 +411,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.398}
---- !u!114 &16689752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16689748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &34405246
 Prefab:
   m_ObjectHideFlags: 0
@@ -558,7 +546,6 @@ GameObject:
   - component: {fileID: 62382929}
   - component: {fileID: 62382928}
   - component: {fileID: 62382927}
-  - component: {fileID: 62382930}
   m_Layer: 0
   m_Name: FloorL
   m_TagString: Ground
@@ -653,17 +640,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 143.69301}
---- !u!114 &62382930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 62382926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &98317032
 Prefab:
   m_ObjectHideFlags: 0
@@ -4275,7 +4251,6 @@ GameObject:
   - component: {fileID: 411026388}
   - component: {fileID: 411026387}
   - component: {fileID: 411026386}
-  - component: {fileID: 411026389}
   m_Layer: 0
   m_Name: FloorG
   m_TagString: Ground
@@ -4371,17 +4346,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -50.36}
---- !u!114 &411026389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 411026385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &427501807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4392,7 +4356,6 @@ GameObject:
   - component: {fileID: 427501810}
   - component: {fileID: 427501809}
   - component: {fileID: 427501808}
-  - component: {fileID: 427501811}
   m_Layer: 0
   m_Name: FloorH
   m_TagString: Ground
@@ -4488,17 +4451,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 54.638004}
---- !u!114 &427501811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 427501807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &442253011
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,7 +4518,6 @@ GameObject:
   - component: {fileID: 443375001}
   - component: {fileID: 443375000}
   - component: {fileID: 443374999}
-  - component: {fileID: 443375002}
   m_Layer: 0
   m_Name: FloorE
   m_TagString: Ground
@@ -4664,17 +4615,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.139001}
---- !u!114 &443375002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 443374998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &451724372
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,7 +4653,6 @@ GameObject:
   - component: {fileID: 496967988}
   - component: {fileID: 496967987}
   - component: {fileID: 496967989}
-  - component: {fileID: 496967986}
   m_Layer: 0
   m_Name: FloorD
   m_TagString: Ground
@@ -4721,17 +4660,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &496967986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496967985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &496967987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5032,7 +4960,6 @@ GameObject:
   - component: {fileID: 519982725}
   - component: {fileID: 519982728}
   - component: {fileID: 519982727}
-  - component: {fileID: 519982726}
   m_Layer: 0
   m_Name: FloorB (2)
   m_TagString: Ground
@@ -5054,17 +4981,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -31.614002}
---- !u!114 &519982726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519982724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &519982727
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5301,7 +5217,6 @@ GameObject:
   - component: {fileID: 588942910}
   - component: {fileID: 588942913}
   - component: {fileID: 588942912}
-  - component: {fileID: 588942911}
   m_Layer: 0
   m_Name: FloorB (8)
   m_TagString: Ground
@@ -5323,17 +5238,6 @@ Transform:
   m_Father: {fileID: 1778167878}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.977001}
---- !u!114 &588942911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 588942909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &588942912
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5531,7 +5435,6 @@ GameObject:
   - component: {fileID: 638540685}
   - component: {fileID: 638540688}
   - component: {fileID: 638540687}
-  - component: {fileID: 638540686}
   m_Layer: 0
   m_Name: FloorB (5)
   m_TagString: Ground
@@ -5553,17 +5456,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.925001}
---- !u!114 &638540686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 638540684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &638540687
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6199,7 +6091,6 @@ GameObject:
   m_Component:
   - component: {fileID: 747208588}
   - component: {fileID: 747208587}
-  - component: {fileID: 747208589}
   m_Layer: 0
   m_Name: Sky
   m_TagString: Left
@@ -6265,17 +6156,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &747208589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 747208586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &763273538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,7 +6240,6 @@ GameObject:
   - component: {fileID: 799413977}
   - component: {fileID: 799413976}
   - component: {fileID: 799413975}
-  - component: {fileID: 799413978}
   m_Layer: 0
   m_Name: FloorJ
   m_TagString: Ground
@@ -6455,17 +6334,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -101.23}
---- !u!114 &799413978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 799413974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &808926638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,7 +6395,6 @@ GameObject:
   - component: {fileID: 810533368}
   - component: {fileID: 810533371}
   - component: {fileID: 810533370}
-  - component: {fileID: 810533369}
   m_Layer: 0
   m_Name: FloorB (4)
   m_TagString: Ground
@@ -6549,17 +6416,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -28.643002}
---- !u!114 &810533369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810533367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &810533370
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8674,7 +8530,6 @@ GameObject:
   - component: {fileID: 1144752806}
   - component: {fileID: 1144752809}
   - component: {fileID: 1144752808}
-  - component: {fileID: 1144752807}
   m_Layer: 0
   m_Name: Problem
   m_TagString: Ground
@@ -8696,17 +8551,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -26.810001}
---- !u!114 &1144752807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1144752805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1144752808
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9217,7 +9061,6 @@ GameObject:
   - component: {fileID: 1188778811}
   - component: {fileID: 1188778812}
   - component: {fileID: 1188778810}
-  - component: {fileID: 1188778813}
   m_Layer: 0
   m_Name: Floor Win
   m_TagString: Ground
@@ -9324,17 +9167,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9408468, y: 0.10584169}
   m_EdgeRadius: 0
---- !u!114 &1188778813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188778808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1199615088
 GameObject:
   m_ObjectHideFlags: 0
@@ -9413,7 +9245,6 @@ GameObject:
   - component: {fileID: 1202572137}
   - component: {fileID: 1202572140}
   - component: {fileID: 1202572139}
-  - component: {fileID: 1202572138}
   m_Layer: 0
   m_Name: FloorB (3)
   m_TagString: Ground
@@ -9435,17 +9266,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 39.297}
---- !u!114 &1202572138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1202572136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1202572139
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9529,7 +9349,6 @@ GameObject:
   - component: {fileID: 1225493369}
   - component: {fileID: 1225493372}
   - component: {fileID: 1225493371}
-  - component: {fileID: 1225493370}
   m_Layer: 0
   m_Name: FloorB (1)
   m_TagString: Ground
@@ -9551,17 +9370,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.925001}
---- !u!114 &1225493370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1225493368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1225493371
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12188,7 +11996,6 @@ GameObject:
   - component: {fileID: 1718993820}
   - component: {fileID: 1718993819}
   - component: {fileID: 1718993818}
-  - component: {fileID: 1718993821}
   m_Layer: 0
   m_Name: FloorK
   m_TagString: Ground
@@ -12283,17 +12090,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.332}
---- !u!114 &1718993821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1718993817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1719241729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12304,7 +12100,6 @@ GameObject:
   - component: {fileID: 1719241732}
   - component: {fileID: 1719241731}
   - component: {fileID: 1719241730}
-  - component: {fileID: 1719241733}
   m_Layer: 0
   m_Name: FloorB
   m_TagString: Ground
@@ -12399,17 +12194,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.461}
---- !u!114 &1719241733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1719241729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1725861207
 Prefab:
   m_ObjectHideFlags: 0
@@ -12577,7 +12361,6 @@ GameObject:
   - component: {fileID: 1778167878}
   - component: {fileID: 1778167881}
   - component: {fileID: 1778167880}
-  - component: {fileID: 1778167879}
   m_Layer: 0
   m_Name: FloorB (7)
   m_TagString: Ground
@@ -12600,17 +12383,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45.381}
---- !u!114 &1778167879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1778167877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1778167880
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13434,7 +13206,6 @@ GameObject:
   - component: {fileID: 1868201888}
   - component: {fileID: 1868201887}
   - component: {fileID: 1868201886}
-  - component: {fileID: 1868201889}
   m_Layer: 0
   m_Name: FloorF
   m_TagString: Ground
@@ -13530,17 +13301,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.3950005}
---- !u!114 &1868201889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868201885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1872693186
 GameObject:
   m_ObjectHideFlags: 0
@@ -13831,7 +13591,6 @@ GameObject:
   - component: {fileID: 1952927404}
   - component: {fileID: 1952927407}
   - component: {fileID: 1952927406}
-  - component: {fileID: 1952927405}
   m_Layer: 0
   m_Name: FloorB (9)
   m_TagString: Ground
@@ -13853,17 +13612,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -270.121}
---- !u!114 &1952927405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1952927403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1952927406
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14004,7 +13752,6 @@ GameObject:
   - component: {fileID: 1966310883}
   - component: {fileID: 1966310882}
   - component: {fileID: 1966310881}
-  - component: {fileID: 1966310884}
   m_Layer: 0
   m_Name: FloorC
   m_TagString: Ground
@@ -14100,17 +13847,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.569}
---- !u!114 &1966310884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1966310880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1966689805
 Prefab:
   m_ObjectHideFlags: 0
@@ -14921,7 +14657,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1980805834}
   - component: {fileID: 1980805837}
-  - component: {fileID: 1980805836}
   - component: {fileID: 1980805835}
   m_Layer: 0
   m_Name: FloorA (1)
@@ -14972,17 +14707,6 @@ PolygonCollider2D:
       - {x: -0.5, y: 0.5}
       - {x: 0.5, y: 0.5}
       - {x: 0.46941954, y: 0.42723283}
---- !u!114 &1980805836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1980805833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1980805837
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16525,7 +16249,6 @@ GameObject:
   - component: {fileID: 2123863837}
   - component: {fileID: 2123863836}
   - component: {fileID: 2123863835}
-  - component: {fileID: 2123863838}
   m_Layer: 0
   m_Name: FloorI
   m_TagString: Ground
@@ -16625,17 +16348,6 @@ Transform:
   m_Father: {fileID: 808926639}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &2123863838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2123863834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242bafa67530e7448c4df11ded8e549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2139501540
 GameObject:
   m_ObjectHideFlags: 0
