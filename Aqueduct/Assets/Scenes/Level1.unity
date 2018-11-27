@@ -3764,12 +3764,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114275959915099572, guid: 530e629ca532f384d9f76ad6894c0048,
+    - target: {fileID: 114960173987409696, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1836499551}
-    - target: {fileID: 114275959915099572, guid: 530e629ca532f384d9f76ad6894c0048,
+    - target: {fileID: 114960173987409696, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3784,12 +3784,12 @@ Prefab:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1836499551}
-    - target: {fileID: 114960173987409696, guid: 530e629ca532f384d9f76ad6894c0048,
+    - target: {fileID: 114275959915099572, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1836499551}
-    - target: {fileID: 114960173987409696, guid: 530e629ca532f384d9f76ad6894c0048,
+    - target: {fileID: 114275959915099572, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3797,10 +3797,6 @@ Prefab:
     - target: {fileID: 224781834394059142, guid: 530e629ca532f384d9f76ad6894c0048,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082906575046604, guid: 530e629ca532f384d9f76ad6894c0048, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

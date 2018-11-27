@@ -63,6 +63,7 @@ public class TransformFollower : MonoBehaviour
             for (var i = waterList.Count - 1; i > -1; i--)
             {
                 if (waterList[i] == null)
+                   
                     waterList.RemoveAt(i);
             }
 
