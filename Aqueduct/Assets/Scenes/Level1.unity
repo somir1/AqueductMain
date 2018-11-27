@@ -4067,7 +4067,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 957888b77e13ae9438fcabde6bf26f3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4709,8 +4709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _numLiquid: 60
-  _width: 10
-  _height: 10
+  _width: 8
+  _height: 8
   _prefab: {fileID: 1624607702375872, guid: 42337375f9d914eea973adb4ec631f17, type: 2}
 --- !u!4 &1506938072
 Transform:
@@ -5903,7 +5903,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 26b21ba4108d4c945be4c4c2ed3fc98f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6085,7 +6085,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.48359585, y: 0.48908263}
+    - - {x: -0.4809811, y: 0.42682368}
       - {x: -0.5, y: 0.5}
       - {x: 0.5, y: 0.5}
       - {x: 0.4339358, y: 0.46861792}
@@ -6123,7 +6123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bfd24f618d9589c49a4cb55da268aec0, type: 3}
   m_Color: {r: 0.8113208, g: 0.78162, b: 0.61614454, a: 0}
   m_FlipX: 0
