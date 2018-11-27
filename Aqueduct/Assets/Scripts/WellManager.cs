@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WellManager : MonoBehaviour {
 
     public GameObject[] Control;
-   
+
+    public Image Number;
+    public Sprite[] Numbers;
+
     public GameObject Panel;
     public GameObject[] Wells;
     public bool[] fulls;
@@ -33,7 +37,51 @@ public class WellManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-      
+        for (int i = 0; i < Wells.Length; i++)
+        {
+            if (Wells[i].GetComponent<BarDamage>().full == true)
+            {
+                fulls[i] = true;
+
+            }
+        }
+        for (int j = 0; j < 3; j++)
+        {
+            //Debug.Log(fulls[j]);
+        }
+
+       
+
+
+
+        // Panel.GetComponent<Stars>().show0.SetActive(true);
+        //    Panel.GetComponent<Stars>().show1.SetActive(true);
+
+        for (int i = 0; i < 3; i++)
+        {
+
+            if (fulls[i] == true)
+            {
+                count++;
+            }
+        }
+
+        //Debug.Log(count);
+
+        if (count == 0 ) {
+            Number.GetComponent<Image>().sprite = Numbers[0];
+        }
+        else if (count == 1){
+            Number.GetComponent<Image>().sprite = Numbers[1];
+        }
+        else if (count == 2 ) {
+            Number.GetComponent<Image>().sprite = Numbers[2];
+        }
+        else if (count == 3)
+        {
+            Number.GetComponent<Image>().sprite = Numbers[3];
+        }
+        count = 0;
 
     }
 
@@ -44,6 +92,7 @@ public class WellManager : MonoBehaviour {
 
             if (numWater == 13)
             {
+                count = 0;
                 for (int i = 0; i < Wells.Length; i++)
                 {
                     if (Wells[i].GetComponent<BarDamage>().full == true)
@@ -52,23 +101,27 @@ public class WellManager : MonoBehaviour {
 
                     }
                 }
-                for (int j = 0; j < 3; j++) {
-                    Debug.Log(fulls[j]);
+                for (int j = 0; j < 3; j++)
+                {
+                    //Debug.Log(fulls[j]);
                 }
+
 
                 Panel.SetActive(true);
 
-                
 
                 // Panel.GetComponent<Stars>().show0.SetActive(true);
                 //    Panel.GetComponent<Stars>().show1.SetActive(true);
 
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 3; i++)
+                {
 
-                    if (fulls[i] == true){
+                    if (fulls[i] == true)
+                    {
                         count++;
-                    } 
+                    }
                 }
+               
 
                 if (count == 1)
                 {
