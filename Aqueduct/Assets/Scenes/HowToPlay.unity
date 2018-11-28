@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 236, y: 22}
+  m_AnchoredPosition: {x: 236, y: 5}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98768886
@@ -221,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 91, y: 138}
+  m_AnchoredPosition: {x: 71, y: 148}
   m_SizeDelta: {x: 83.1, y: 83.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117602537
@@ -479,7 +479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -188}
+  m_AnchoredPosition: {x: 65, y: -205}
   m_SizeDelta: {x: 83.1, y: 83.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534893410
@@ -547,7 +547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 56, y: -12}
+  m_AnchoredPosition: {x: 56, y: -29}
   m_SizeDelta: {x: 83.1, y: 83.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608635713
@@ -615,7 +615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -262.6, y: -248}
+  m_AnchoredPosition: {x: -262.6, y: -265}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617652055
@@ -819,7 +819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 236, y: -154}
+  m_AnchoredPosition: {x: 236, y: -171}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189233647
@@ -854,9 +854,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Avoid letting water hit houses. A house will take \nwater damage if too
-    much water hits it. This will \npartially fill the red damage bar at the top of
-    your\nscreen. You lose the level if the bar\ncompletely fills."
+  m_Text: "Avoid letting water hit houses. A house will \ntake water damage if too
+    much water hits it.\nThis will partially fill the red damage bar at\nthe top of
+    your screen. You lose the level\nif the bar completely fills."
 --- !u!222 &1189233648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.4, y: -454.09998}
+  m_AnchoredPosition: {x: -251.4, y: -471.09998}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212403215
@@ -971,7 +971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 236, y: -333}
+  m_AnchoredPosition: {x: 236, y: -350}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245160148
@@ -1006,8 +1006,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Redirect water through wells to help the villagers,\nand in return you
-    will gain a star. \nGet 3 stars to unlock the next level. \r"
+  m_Text: "Redirect water through wells to help the \nvillagers,and in return you
+    will gain\na star. Get 3 stars to unlock the\nnext level. \r"
 --- !u!222 &1245160149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000006198883, y: -262.9997}
+  m_AnchoredPosition: {x: 0.000006198883, y: -259}
   m_SizeDelta: {x: 265.3, y: 64.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282338407
@@ -1329,7 +1329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 72, y: -381}
+  m_AnchoredPosition: {x: 62, y: -398}
   m_SizeDelta: {x: 83.1, y: 83.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396210731
@@ -1397,7 +1397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -262.6, y: -74.29999}
+  m_AnchoredPosition: {x: -262.6, y: -91.29999}
   m_SizeDelta: {x: 133, y: 24.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401325617
@@ -1506,9 +1506,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "How to Win - Drag and drop the aqueducts onto \nthe terrainto redirect
-    water to the bottom of the \nmountain. Aqueducts will transfer water \nupon contact
-    to the end of the aqueduct."
+  m_Text: "How to Win - Drag and drop the aqueducts\nonto the terrain to redirect
+    water to the bottom\nof the mountain. Aqueducts will transfer \nwater upon contact
+    to the end of the\naqueduct."
 --- !u!222 &1517640331
 CanvasRenderer:
   m_ObjectHideFlags: 0
