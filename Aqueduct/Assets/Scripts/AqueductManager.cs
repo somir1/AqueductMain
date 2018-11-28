@@ -79,9 +79,9 @@ public class AqueductManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Level3")
         {
-            ductL = 3;
-            ductD = 3;
-            ductR = 3;
+            ductL = 2;
+            ductD = 2;
+            ductR = 2;
         }
         // foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Ground"))
         //{
